@@ -1,0 +1,406 @@
+filename,input_condition,model,main_category,sub_category,answer
+Heart of Darkness,full_text,gpt-5.4,protagonist,name,Marlow
+Heart of Darkness,full_text,gpt-5.4,protagonist,description,A reflective seaman and narrator who journeys into the colonial interior and confronts the moral darkness beneath imperial ideals and within human nature.
+Heart of Darkness,full_text,gpt-5.4,protagonist,primary_goal,"To captain a river steamboat into the interior, reach Kurtz, and make sense of what he witnesses."
+Heart of Darkness,full_text,gpt-5.4,major_themes,[1],moral corruption
+Heart of Darkness,full_text,gpt-5.4,major_themes,[2],imperial hypocrisy
+Heart of Darkness,full_text,gpt-5.4,major_themes,[3],civilization versus savagery
+Heart of Darkness,full_text,gpt-5.4,major_themes,[4],self-knowledge
+Heart of Darkness,full_text,gpt-5.4,major_themes,[5],darkness within human nature
+Heart of Darkness,full_text,gpt-5.4,major_themes,[6],illusion versus truth
+Heart of Darkness,full_text,gpt-5.4,major_themes,[7],greed
+Heart of Darkness,full_text,gpt-5.4,major_themes,[8],restraint
+Heart of Darkness,full_text,gpt-5.4,major_themes,[9],isolation
+Heart of Darkness,full_text,gpt-5.4,major_locations,[1].location,river vessel and waterway
+Heart of Darkness,full_text,gpt-5.4,major_locations,[1].location_type,"maritime, liminal, colonial transit space"
+Heart of Darkness,full_text,gpt-5.4,major_locations,[1].social_or_symbolic_significance,A passage into psychological and moral darkness; movement inward becomes a descent into truth.
+Heart of Darkness,full_text,gpt-5.4,major_locations,[2].location,European city
+Heart of Darkness,full_text,gpt-5.4,major_locations,[2].location_type,"urban, wealthy, bureaucratic, imperial center"
+Heart of Darkness,full_text,gpt-5.4,major_locations,[2].social_or_symbolic_significance,"Represents polished civilization, self-deception, and the distant machinery of exploitation."
+Heart of Darkness,full_text,gpt-5.4,major_locations,[3].location,colonial trading stations
+Heart of Darkness,full_text,gpt-5.4,major_locations,[3].location_type,"institutional, extractive, frontier outposts"
+Heart of Darkness,full_text,gpt-5.4,major_locations,[3].social_or_symbolic_significance,"Sites where imperial rhetoric collapses into greed, disorder, cruelty, and decay."
+Heart of Darkness,full_text,gpt-5.4,major_locations,[4].location,jungle and river interior
+Heart of Darkness,full_text,gpt-5.4,major_locations,[4].location_type,"natural, remote, hostile, primal"
+Heart of Darkness,full_text,gpt-5.4,major_locations,[4].social_or_symbolic_significance,"Embodies isolation, temptation, and the stripping away of social restraints."
+Heart of Darkness,full_text,gpt-5.4,major_locations,[5].location,domestic drawing room
+Heart of Darkness,full_text,gpt-5.4,major_locations,[5].location_type,"domestic, respectable, sheltered"
+Heart of Darkness,full_text,gpt-5.4,major_locations,[5].social_or_symbolic_significance,A protected space of idealized belief where harsh truth is softened by illusion.
+Heart of Darkness,full_text,gpt-5.4,central_conflict,summary,"Marlow struggles to preserve moral clarity and restraint while witnessing colonial brutality, confronting Kurtz's collapse, and recognizing how thin the veneer of civilization can be."
+Heart of Darkness,full_text,gpt-5.4,central_conflict,structural_type,person vs. self
+Heart of Darkness,full_text,gpt-5.4,central_conflict,thematic_opposing_force,"the seduction of power and greed under imperialism versus conscience, truth, and moral restraint"
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[1].action,Seeks appointment to command a river steamboat in the colonial interior.
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[1].relationship_to_values_or_goals,"Driven by curiosity, adventure, and a desire to test himself."
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[2].action,"Travels through colonial outposts and observes exploitation, waste, and suffering."
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[2].relationship_to_values_or_goals,His witnessing deepens his moral awareness and skepticism toward imperial ideals.
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[3].action,Repairs and salvages his damaged steamboat despite obstruction and incompetence around him.
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[3].relationship_to_values_or_goals,"Shows commitment to work, competence, and practical integrity as anchors against chaos."
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[4].action,Becomes increasingly preoccupied with reaching and understanding Kurtz.
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[4].relationship_to_values_or_goals,Reflects his search for meaning and for a human center within the surrounding moral confusion.
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[5].action,Pilots the steamboat upriver through danger and uncertainty.
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[5].relationship_to_values_or_goals,"Enacts perseverance, responsibility, and disciplined self-control."
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[6].action,Responds to the attack on the steamer and continues onward after his helmsman is killed.
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[6].relationship_to_values_or_goals,Demonstrates duty under pressure and emotional endurance.
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[7].action,Learns from the Russian and witnesses the extent of Kurtz's domination and degradation.
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[7].relationship_to_values_or_goals,Forces him to confront the consequences of unrestrained ambition and moral collapse.
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[8].action,Stops Kurtz from escaping back into the wilderness.
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[8].relationship_to_values_or_goals,"Acts from loyalty, responsibility, and a desire to resist total surrender to darkness."
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[9].action,Listens to Kurtz's final words and interprets them as a judgment on his life.
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[9].relationship_to_values_or_goals,"Advances Marlow's search for truth, however disturbing."
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[10].action,Visits Kurtz's Intended and lies about Kurtz's last words.
+Heart of Darkness,full_text,gpt-5.4,principal_actions,[10].relationship_to_values_or_goals,"Shows his conflict between truth and compassion, and his uneasy protection of sustaining illusions."
+Heart of Darkness,full_text,gpt-5.4,values_pursued,[1].value,truth
+Heart of Darkness,full_text,gpt-5.4,values_pursued,[1].explanation,"Marlow seeks to understand the real nature of empire, Kurtz, and himself beneath appearances."
+Heart of Darkness,full_text,gpt-5.4,values_pursued,[2].value,moral restraint
+Heart of Darkness,full_text,gpt-5.4,values_pursued,[2].explanation,He repeatedly contrasts restraint with Kurtz's surrender to appetite and domination.
+Heart of Darkness,full_text,gpt-5.4,values_pursued,[3].value,duty
+Heart of Darkness,full_text,gpt-5.4,values_pursued,[3].explanation,"He remains committed to navigating, repairing, and completing his task despite disgust and danger."
+Heart of Darkness,full_text,gpt-5.4,values_pursued,[4].value,self-knowledge
+Heart of Darkness,full_text,gpt-5.4,values_pursued,[4].explanation,He treats the journey as a test of what lies within a person when external rules fall away.
+Heart of Darkness,full_text,gpt-5.4,values_pursued,[5].value,loyalty
+Heart of Darkness,full_text,gpt-5.4,values_pursued,[5].explanation,"He feels bound to Kurtz in a troubling, personal way even after judging him."
+Heart of Darkness,full_text,gpt-5.4,values_pursued,[6].value,competence
+Heart of Darkness,full_text,gpt-5.4,values_pursued,[6].explanation,Practical work and seamanship provide him a fragile moral footing amid unreality and corruption.
+Heart of Darkness,full_text,gpt-5.4,values_threatened,[1].value,human dignity
+Heart of Darkness,full_text,gpt-5.4,values_threatened,[1].explanation,"Marlow witnesses enslaved, starving, and dying Africans treated as expendable instruments."
+Heart of Darkness,full_text,gpt-5.4,values_threatened,[2].value,truth
+Heart of Darkness,full_text,gpt-5.4,values_threatened,[2].explanation,"Imperial rhetoric, self-serving lies, and social illusions constantly obscure reality."
+Heart of Darkness,full_text,gpt-5.4,values_threatened,[3].value,justice
+Heart of Darkness,full_text,gpt-5.4,values_threatened,[3].explanation,"Violence, theft, and exploitation are normalized under the guise of civilization and progress."
+Heart of Darkness,full_text,gpt-5.4,values_threatened,[4].value,moral integrity
+Heart of Darkness,full_text,gpt-5.4,values_threatened,[4].explanation,"Marlow feels the pressure of complicity, compromise, and fascination with Kurtz."
+Heart of Darkness,full_text,gpt-5.4,values_threatened,[5].value,restraint
+Heart of Darkness,full_text,gpt-5.4,values_threatened,[5].explanation,The wilderness and unchecked power expose how easily civilized limits can collapse.
+Heart of Darkness,full_text,gpt-5.4,values_threatened,[6].value,compassion
+Heart of Darkness,full_text,gpt-5.4,values_threatened,[6].explanation,Human suffering is routinely ignored or subordinated to profit and ambition.
+Heart of Darkness,full_text,gpt-5.4,consequence_resolution,ending_summary,"Kurtz dies after uttering 'The horror! The horror!' Marlow survives, returns to Europe disillusioned, protects parts of Kurtz's legacy, and lies to Kurtz's Intended by telling her that Kurtz's last word was her name."
+Heart of Darkness,full_text,gpt-5.4,consequence_resolution,moral_significance,"The ending frames Kurtz's final cry as a terrible moment of self-recognition and leaves Marlow burdened with the knowledge that civilization's ideals often conceal greed, violence, and inner darkness."
+Heart of Darkness,full_text,gpt-5.4,story_morals,[1],"When power is unchecked by restraint, the darkness within us takes command."
+Heart of Darkness,full_text,gpt-5.4,story_morals,[2],Fine ideals mean little when greed and self-deception rule the heart.
+Heart of Darkness,full_text,gpt-5.4,story_morals,[3],"To face the truth about human nature is painful, but blindness is more dangerous."
+Heart of Darkness,full_text,gemini-3.1-pro-preview,protagonist,name,Charlie Marlow
+Heart of Darkness,full_text,gemini-3.1-pro-preview,protagonist,description,"A philosophical, observant, and experienced seaman who works as a riverboat captain for a European trading company."
+Heart of Darkness,full_text,gemini-3.1-pro-preview,protagonist,primary_goal,"To navigate a treacherous river to retrieve the enigmatic agent Kurtz, while attempting to maintain his own sanity and moral compass."
+Heart of Darkness,full_text,gemini-3.1-pro-preview,major_themes,[1],The hypocrisy of imperialism and civilization
+Heart of Darkness,full_text,gemini-3.1-pro-preview,major_themes,[2],The inherent darkness of human nature
+Heart of Darkness,full_text,gemini-3.1-pro-preview,major_themes,[3],Madness and psychological isolation
+Heart of Darkness,full_text,gemini-3.1-pro-preview,major_themes,[4],The conflict between truth and illusion
+Heart of Darkness,full_text,gemini-3.1-pro-preview,major_locations,[1].location,The Sepulchral City
+Heart of Darkness,full_text,gemini-3.1-pro-preview,major_locations,[1].location_type,"urban, institutional"
+Heart of Darkness,full_text,gemini-3.1-pro-preview,major_locations,[1].social_or_symbolic_significance,"Represents the hypocritical heart of the imperial enterprise, masking greed and exploitation with bureaucracy and false virtue."
+Heart of Darkness,full_text,gemini-3.1-pro-preview,major_locations,[2].location,The Company Stations
+Heart of Darkness,full_text,gemini-3.1-pro-preview,major_locations,[2].location_type,colonial outpost
+Heart of Darkness,full_text,gemini-3.1-pro-preview,major_locations,[2].social_or_symbolic_significance,"Highlights the inefficiency, cruelty, petty greed, and absurdity of the colonial mission."
+Heart of Darkness,full_text,gemini-3.1-pro-preview,major_locations,[3].location,The Inner Station and Jungle
+Heart of Darkness,full_text,gemini-3.1-pro-preview,major_locations,[3].location_type,"natural, remote wilderness"
+Heart of Darkness,full_text,gemini-3.1-pro-preview,major_locations,[3].social_or_symbolic_significance,"The primal, untamed world that strips away civilized illusions and exposes the raw, dark core of human nature."
+Heart of Darkness,full_text,gemini-3.1-pro-preview,central_conflict,summary,"Marlow journeys into the deep jungle to retrieve a rogue ivory agent, Kurtz, and must confront the brutal reality of colonial exploitation and the terrifying moral abyss within the human soul."
+Heart of Darkness,full_text,gemini-3.1-pro-preview,central_conflict,structural_type,person vs. self
+Heart of Darkness,full_text,gemini-3.1-pro-preview,central_conflict,thematic_opposing_force,"Imperial greed, moral corruption, and the primal savagery of human nature unmoored from societal restraint."
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[1].action,Secures a job as a riverboat captain through his aunt's influence
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[1].relationship_to_values_or_goals,Fulfills a childhood dream of exploration and adventure in the 'blank spaces' of the map.
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[2].action,Witnesses the brutal enslavement and dying of native workers at the Outer Station
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[2].relationship_to_values_or_goals,Awakens his disgust toward the hypocrisy and cruelty of the imperial enterprise.
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[3].action,Spends months repairing his sunken steamboat at the Central Station
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[3].relationship_to_values_or_goals,Clings to the value of 'efficiency' and hard work as a means to preserve his sanity amidst the surrounding absurdity.
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[4].action,Navigates the treacherous river toward the Inner Station
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[4].relationship_to_values_or_goals,Pursues his growing obsession with finding Kurtz and uncovering the truth behind the man's legend.
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[5].action,Survives an attack by native tribesmen and loses his helmsman
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[5].relationship_to_values_or_goals,Forces him to confront the immediate physical dangers of the wilderness and the fragile nature of human life.
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[6].action,"Discovers that Kurtz has established himself as a brutal, god-like figure"
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[6].relationship_to_values_or_goals,Shatters his illusions about the 'civilizing mission' and reveals the ultimate degradation of a mind without restraint.
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[7].action,Confronts Kurtz in the jungle at night and brings him back to the boat
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[7].relationship_to_values_or_goals,"Acts to pull Kurtz back from the brink of total savagery, asserting a desperate loyalty to the remnants of Kurtz's humanity."
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[8].action,"Listens to Kurtz's final words, 'The horror! The horror!'"
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[8].relationship_to_values_or_goals,"Achieves a profound, terrifying revelation about the ultimate truth of human existence and moral bankruptcy."
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[9].action,Returns to Europe and struggles to reintegrate into society
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[9].relationship_to_values_or_goals,Reflects his deep alienation and realization that civilized society is built on willful ignorance.
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[10].action,Lies to Kurtz's Intended about Kurtz's final words
+Heart of Darkness,full_text,gemini-3.1-pro-preview,principal_actions,[10].relationship_to_values_or_goals,Sacrifices his strict personal commitment to the truth in order to protect an innocent woman's comforting illusions.
+Heart of Darkness,full_text,gemini-3.1-pro-preview,values_pursued,[1].value,truth
+Heart of Darkness,full_text,gemini-3.1-pro-preview,values_pursued,[1].explanation,Marlow seeks the reality behind the Company's facade and the true nature of Kurtz's character.
+Heart of Darkness,full_text,gemini-3.1-pro-preview,values_pursued,[2].value,efficiency
+Heart of Darkness,full_text,gemini-3.1-pro-preview,values_pursued,[2].explanation,"Marlow finds salvation, sanity, and purpose in the practical, honest task of repairing and steering his steamboat."
+Heart of Darkness,full_text,gemini-3.1-pro-preview,values_pursued,[3].value,restraint
+Heart of Darkness,full_text,gemini-3.1-pro-preview,values_pursued,[3].explanation,Marlow values the internal moral and psychological boundaries that keep a person from descending into savagery.
+Heart of Darkness,full_text,gemini-3.1-pro-preview,values_threatened,[1].value,humanity
+Heart of Darkness,full_text,gemini-3.1-pro-preview,values_threatened,[1].explanation,"Threatened by the brutal, dehumanizing exploitation of the native population by the colonizers."
+Heart of Darkness,full_text,gemini-3.1-pro-preview,values_threatened,[2].value,sanity
+Heart of Darkness,full_text,gemini-3.1-pro-preview,values_threatened,[2].explanation,"Placed at risk by the profound isolation, the oppressive wilderness, and the breakdown of civilized norms."
+Heart of Darkness,full_text,gemini-3.1-pro-preview,values_threatened,[3].value,integrity
+Heart of Darkness,full_text,gemini-3.1-pro-preview,values_threatened,[3].explanation,"Violated at the end of the story when Marlow chooses to lie to Kurtz's Intended, compromising his hatred of falsehood."
+Heart of Darkness,full_text,gemini-3.1-pro-preview,consequence_resolution,ending_summary,"Marlow returns to Europe profoundly changed and haunted by Kurtz's memory. He visits Kurtz's grieving fiancée and, unable to shatter her pure but naive faith, lies by telling her that Kurtz's last word was her name."
+Heart of Darkness,full_text,gemini-3.1-pro-preview,consequence_resolution,moral_significance,"The resolution highlights the fragile illusions that sustain civilization. Marlow compromises his strict hatred of lies to protect the innocent from the devastating truth of human depravity, suggesting that society functions only by ignoring the darkness at its core."
+Heart of Darkness,full_text,gemini-3.1-pro-preview,story_morals,[1],The veneer of civilization is fragile and easily stripped away to reveal the primal darkness within human nature.
+Heart of Darkness,full_text,gemini-3.1-pro-preview,story_morals,[2],"Absolute power and isolation, devoid of societal restraint, inevitably lead to moral corruption and madness."
+Heart of Darkness,full_text,gemini-3.1-pro-preview,story_morals,[3],Society often relies on comforting illusions and lies to shield itself from the horrifying truths of its own existence.
+Heart of Darkness,chunk_summary,gpt-5.4,protagonist,name,Marlow
+Heart of Darkness,chunk_summary,gpt-5.4,protagonist,description,A reflective seaman who journeys into colonial Africa and becomes a witness to imperial brutality and moral disintegration.
+Heart of Darkness,chunk_summary,gpt-5.4,protagonist,primary_goal,To reach Kurtz by steamboat and understand the man and the world that produced him.
+Heart of Darkness,chunk_summary,gpt-5.4,major_themes,[1],imperialism and exploitation
+Heart of Darkness,chunk_summary,gpt-5.4,major_themes,[2],moral corruption
+Heart of Darkness,chunk_summary,gpt-5.4,major_themes,[3],civilization versus savagery
+Heart of Darkness,chunk_summary,gpt-5.4,major_themes,[4],illusion versus truth
+Heart of Darkness,chunk_summary,gpt-5.4,major_themes,[5],human darkness
+Heart of Darkness,chunk_summary,gpt-5.4,major_themes,[6],power and domination
+Heart of Darkness,chunk_summary,gpt-5.4,major_themes,[7],conscience and complicity
+Heart of Darkness,chunk_summary,gpt-5.4,major_themes,[8],the limits of language
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[1].location,river vessel on a major imperial waterway
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[1].location_type,"public, maritime, imperial"
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[1].social_or_symbolic_significance,A reflective frame linking civilized empire to older darkness and conquest.
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[2].location,company offices in Europe
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[2].location_type,"urban, bureaucratic, institutional"
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[2].social_or_symbolic_significance,"Represents distant administrative power, moral detachment, and ominous ritualized authority."
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[3].location,colonial coastal outpost
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[3].location_type,"institutional, exploitative, frontier"
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[3].social_or_symbolic_significance,Exposes the violence and waste hidden beneath imperial rhetoric.
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[4].location,central trading station
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[4].location_type,"institutional, corrupt, isolated"
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[4].social_or_symbolic_significance,"A stagnant world of intrigue, greed, and incompetence where moral decay becomes normalized."
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[5].location,jungle river and interior wilderness
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[5].location_type,"natural, hostile, liminal"
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[5].social_or_symbolic_significance,"Embodies psychological descent, primal temptation, and the stripping away of civilized restraints."
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[6].location,remote inner station
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[6].location_type,"frontier, isolated, quasi-feudal"
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[6].social_or_symbolic_significance,"The extreme endpoint of unchecked power, where Kurtz's inner corruption is made visible."
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[7].location,European domestic drawing room
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[7].location_type,"domestic, bourgeois, civilized"
+Heart of Darkness,chunk_summary,gpt-5.4,major_locations,[7].social_or_symbolic_significance,A space of comforting illusion where harsh truth is softened to preserve faith.
+Heart of Darkness,chunk_summary,gpt-5.4,central_conflict,summary,Marlow's journey to Kurtz becomes a confrontation with the hypocrisy of empire and with the human capacity for moral collapse when power is unchecked and social restraints fall away.
+Heart of Darkness,chunk_summary,gpt-5.4,central_conflict,structural_type,person vs. society
+Heart of Darkness,chunk_summary,gpt-5.4,central_conflict,thematic_opposing_force,imperial exploitation and the corrupting lure of absolute power
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[1].action,Accepts a river command in Africa out of curiosity and desire for exploration.
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[1].relationship_to_values_or_goals,"Pursues discovery, professional purpose, and fascination with the unknown."
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[2].action,Observes and inwardly condemns the cruelty and waste of colonial operations.
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[2].relationship_to_values_or_goals,Shows his commitment to moral perception and truth over imperial propaganda.
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[3].action,Repairs and insists on securing the steamboat despite bureaucratic obstruction.
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[3].relationship_to_values_or_goals,"Reflects perseverance, duty, and determination to reach Kurtz."
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[4].action,Studies the station's intrigues and listens closely to rumors about Kurtz.
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[4].relationship_to_values_or_goals,Reveals his growing need to understand the moral and political center of the journey.
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[5].action,Pilots the steamer upriver through danger and uncertainty.
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[5].relationship_to_values_or_goals,"Embodies endurance, competence, and commitment to his mission."
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[6].action,Continues toward Kurtz after the attack and the helmsman's death.
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[6].relationship_to_values_or_goals,Shows resolve under fear and a deepening personal investment in confronting Kurtz.
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[7].action,Inspects Kurtz's station and recognizes the brutality symbolized by the heads on stakes.
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[7].relationship_to_values_or_goals,Marks his moral awakening to the full extent of Kurtz's corruption.
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[8].action,Secretly follows Kurtz into the wilderness and persuades him to return to the steamer.
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[8].relationship_to_values_or_goals,Acts to restrain chaos and preserve a last remnant of order and accountability.
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[9].action,Receives Kurtz's final words and interprets them as a judgment on his life.
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[9].relationship_to_values_or_goals,Affirms Marlow's search for moral meaning amid horror.
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[10].action,Lies to Kurtz's Intended about his final words.
+Heart of Darkness,chunk_summary,gpt-5.4,principal_actions,[10].relationship_to_values_or_goals,"Shows his conflict between truth and compassion, and his retreat from complete honesty."
+Heart of Darkness,chunk_summary,gpt-5.4,values_pursued,[1].value,truth
+Heart of Darkness,chunk_summary,gpt-5.4,values_pursued,[1].explanation,Marlow seeks to see beyond imperial rhetoric and understand what Kurtz and the colonial enterprise really are.
+Heart of Darkness,chunk_summary,gpt-5.4,values_pursued,[2].value,moral awareness
+Heart of Darkness,chunk_summary,gpt-5.4,values_pursued,[2].explanation,He continually judges what he witnesses rather than accepting corruption as normal.
+Heart of Darkness,chunk_summary,gpt-5.4,values_pursued,[3].value,duty
+Heart of Darkness,chunk_summary,gpt-5.4,values_pursued,[3].explanation,He remains committed to his work as captain and to completing the journey.
+Heart of Darkness,chunk_summary,gpt-5.4,values_pursued,[4].value,self-knowledge
+Heart of Darkness,chunk_summary,gpt-5.4,values_pursued,[4].explanation,His fascination with Kurtz is also a search to understand the darkness possible within human beings.
+Heart of Darkness,chunk_summary,gpt-5.4,values_pursued,[5].value,restraint
+Heart of Darkness,chunk_summary,gpt-5.4,values_pursued,[5].explanation,He values limits and discipline in contrast to Kurtz's surrender to appetite and domination.
+Heart of Darkness,chunk_summary,gpt-5.4,values_threatened,[1].value,human dignity
+Heart of Darkness,chunk_summary,gpt-5.4,values_threatened,[1].explanation,Colonial violence reduces African laborers and local people to expendable bodies and instruments.
+Heart of Darkness,chunk_summary,gpt-5.4,values_threatened,[2].value,justice
+Heart of Darkness,chunk_summary,gpt-5.4,values_threatened,[2].explanation,"The Company operates through exploitation, impunity, and greed rather than fairness or law."
+Heart of Darkness,chunk_summary,gpt-5.4,values_threatened,[3].value,sanity
+Heart of Darkness,chunk_summary,gpt-5.4,values_threatened,[3].explanation,The journey repeatedly suggests that isolation and power can deform the mind.
+Heart of Darkness,chunk_summary,gpt-5.4,values_threatened,[4].value,truthfulness
+Heart of Darkness,chunk_summary,gpt-5.4,values_threatened,[4].explanation,Marlow confronts lies at every level and ultimately compromises truth himself with Kurtz's Intended.
+Heart of Darkness,chunk_summary,gpt-5.4,values_threatened,[5].value,civilization
+Heart of Darkness,chunk_summary,gpt-5.4,values_threatened,[5].explanation,The supposed civilizing mission is exposed as a fragile mask over brutality and desire.
+Heart of Darkness,chunk_summary,gpt-5.4,values_threatened,[6].value,compassion
+Heart of Darkness,chunk_summary,gpt-5.4,values_threatened,[6].explanation,Human suffering is routinely ignored or instrumentalized by the colonial system.
+Heart of Darkness,chunk_summary,gpt-5.4,consequence_resolution,ending_summary,"Marlow brings Kurtz back from the inner station, but Kurtz dies after recognizing the horror of his own life. Marlow survives illness, returns to Europe disillusioned, and preserves Kurtz's fiancée's illusion by lying about his final words."
+Heart of Darkness,chunk_summary,gpt-5.4,consequence_resolution,moral_significance,"The ending suggests that confronting evil may yield insight but not purity; Marlow gains moral knowledge yet remains compromised, showing how deeply corruption and illusion shape both empire and individual conscience."
+Heart of Darkness,chunk_summary,gpt-5.4,story_morals,[1],Unchecked power strips away civilization and reveals the darkness within.
+Heart of Darkness,chunk_summary,gpt-5.4,story_morals,[2],Fine ideals become cruelty when greed rules the heart.
+Heart of Darkness,chunk_summary,gpt-5.4,story_morals,[3],Seeing the truth about evil does not spare one from complicity.
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,protagonist,name,Marlow
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,protagonist,description,"A philosophical, observant, and morally conflicted sailor who takes a job as a river steamboat captain for a European trading company in Africa."
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,protagonist,primary_goal,"To navigate the African river, retrieve the mysterious ivory agent Mr. Kurtz, and uncover the truth behind Kurtz's legendary reputation."
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,major_themes,[1],The hypocrisy and brutality of imperialism
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,major_themes,[2],The fragility of civilization and morality
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,major_themes,[3],The corrupting influence of unchecked power
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,major_themes,[4],The inherent darkness of the human soul
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,major_themes,[5],"Truth, illusion, and the burden of knowledge"
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,major_locations,[1].location,European Trading Company Offices
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,major_locations,[1].location_type,Institutional
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,major_locations,[1].social_or_symbolic_significance,"Represents the cold, bureaucratic, and ominous center of imperial power that orchestrates the exploitation of Africa from afar."
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,major_locations,[2].location,Colonial Outposts
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,major_locations,[2].location_type,Frontier
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,major_locations,[2].social_or_symbolic_significance,"Symbolizes the chaotic, inefficient, and brutal reality of colonialism, marked by greed, cruelty, and the physical decay of both colonizers and the colonized."
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,major_locations,[3].location,The Deep Wilderness
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,major_locations,[3].location_type,Natural
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,major_locations,[3].social_or_symbolic_significance,"Acts as a primal, isolating force that strips away societal conventions, exposing the raw, unchecked desires and moral darkness of humanity."
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,central_conflict,summary,"Marlow journeys into the heart of the African wilderness to find Kurtz, only to confront the horrifying reality of European imperialism and the terrifying depths of human depravity when freed from societal restraints."
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,central_conflict,structural_type,person vs. self
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,central_conflict,thematic_opposing_force,The corrupting allure of absolute power and the moral void of imperial exploitation.
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[1].action,Secures a steamboat captain position through family connections.
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[1].relationship_to_values_or_goals,"Driven by a lifelong, romanticized curiosity about the unexplored blank spaces on the map."
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[2].action,Observes the brutal treatment of native laborers at the coastal stations.
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[2].relationship_to_values_or_goals,Awakens his moral disgust toward the hypocrisy and cruelty of the colonial enterprise.
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[3].action,Repairs the sunken steamboat despite bureaucratic incompetence.
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[3].relationship_to_values_or_goals,Demonstrates his commitment to the value of honest work and duty as an anchor against the surrounding madness.
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[4].action,Navigates the treacherous river deeper into the continent.
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[4].relationship_to_values_or_goals,"Pursues his growing obsession with meeting Kurtz, seeking a voice of moral clarity amidst the Company's greed."
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[5].action,Mourns the death of his native helmsman during an attack.
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[5].relationship_to_values_or_goals,Reflects his underlying humanity and recognition of shared mortality across racial lines.
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[6].action,Discovers the gruesome reality of Kurtz's brutal reign at the Inner Station.
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[6].relationship_to_values_or_goals,"Shatters his idealized expectations, forcing him to confront the ultimate failure of European civilizing ideals."
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[7].action,Tracks the escaped Kurtz into the jungle alone at night.
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[7].relationship_to_values_or_goals,"Takes personal responsibility for confronting the darkness, choosing loyalty to Kurtz's nightmare over the Company's hypocritical greed."
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[8].action,"Listens to Kurtz's final words, 'The horror! The horror!'"
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[8].relationship_to_values_or_goals,"Validates his search for truth, recognizing Kurtz's dying exclamation as a profound, albeit terrifying, moral victory."
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[9].action,Protects Kurtz's legacy from the Company officials upon returning to Europe.
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[9].relationship_to_values_or_goals,"Maintains his loyalty to Kurtz, viewing Kurtz's honest darkness as superior to the Company's hollow bureaucratic lies."
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[10].action,Lies to Kurtz's Intended about his final words.
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,principal_actions,[10].relationship_to_values_or_goals,Sacrifices his strict adherence to the truth to protect the innocent from the devastating reality of human darkness.
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,values_pursued,[1].value,Truth
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,values_pursued,[1].explanation,Marlow seeks the reality behind the Company's noble rhetoric and the truth of Kurtz's character.
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,values_pursued,[2].value,Duty
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,values_pursued,[2].explanation,He relies on the practical necessity of work and seamanship to maintain his sanity and moral grounding.
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,values_pursued,[3].value,Loyalty
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,values_pursued,[3].explanation,"He ultimately aligns himself with Kurtz, choosing the nightmare of Kurtz's honest madness over the hypocritical greed of the Company."
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,values_threatened,[1].value,Morality
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,values_threatened,[1].explanation,"The brutal, unchecked environment of the colonial frontier constantly threatens to strip away his ethical boundaries."
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,values_threatened,[2].value,Sanity
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,values_threatened,[2].explanation,The overwhelming wilderness and the absurdity of the colonial enterprise risk destroying his psychological stability.
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,values_threatened,[3].value,Justice
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,values_threatened,[3].explanation,The horrific exploitation and murder of the native population violate his sense of fundamental human fairness.
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,consequence_resolution,ending_summary,"Marlow returns to Europe, forever changed and alienated by his experiences, and ultimately lies to Kurtz's grieving fiancée to preserve her idealized image of him."
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,consequence_resolution,moral_significance,"The resolution suggests that the horrifying truth of human nature and imperialism is too devastating for civilized society to bear, forcing those who know the truth to live in isolation and complicit silence."
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,story_morals,[1],"Without the external restraints of society, the human soul is highly susceptible to corruption and primal darkness."
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,story_morals,[2],"The rhetoric of civilization and progress often masks profound greed, brutality, and moral emptiness."
+Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,story_morals,[3],Protecting the innocent from terrible truths sometimes requires sacrificing one's own moral purity through deception.
+Heart of Darkness,memory,gpt-5.4,protagonist,name,Charles Marlow
+Heart of Darkness,memory,gpt-5.4,protagonist,description,A reflective seaman and riverboat captain who journeys into colonial Africa and confronts the moral emptiness beneath imperial ambition and within himself.
+Heart of Darkness,memory,gpt-5.4,protagonist,primary_goal,"To travel upriver, meet Kurtz, and fulfill his professional duty while making sense of the human reality behind empire."
+Heart of Darkness,memory,gpt-5.4,major_themes,[1],imperial hypocrisy
+Heart of Darkness,memory,gpt-5.4,major_themes,[2],moral corruption
+Heart of Darkness,memory,gpt-5.4,major_themes,[3],civilization versus savagery
+Heart of Darkness,memory,gpt-5.4,major_themes,[4],self-knowledge
+Heart of Darkness,memory,gpt-5.4,major_themes,[5],darkness within human nature
+Heart of Darkness,memory,gpt-5.4,major_themes,[6],illusion and truth
+Heart of Darkness,memory,gpt-5.4,major_themes,[7],power and domination
+Heart of Darkness,memory,gpt-5.4,major_themes,[8],isolation
+Heart of Darkness,memory,gpt-5.4,major_locations,[1].location,urban imperial center
+Heart of Darkness,memory,gpt-5.4,major_locations,[1].location_type,"urban, wealthy, institutional"
+Heart of Darkness,memory,gpt-5.4,major_locations,[1].social_or_symbolic_significance,"Represents the polished surface of empire, where exploitation is disguised as progress and moral distance from violence is maintained."
+Heart of Darkness,memory,gpt-5.4,major_locations,[2].location,colonial trading stations
+Heart of Darkness,memory,gpt-5.4,major_locations,[2].location_type,"institutional, public, extractive, impoverished"
+Heart of Darkness,memory,gpt-5.4,major_locations,[2].social_or_symbolic_significance,"Expose the inefficiency, cruelty, and dehumanization at the operational core of colonial rule."
+Heart of Darkness,memory,gpt-5.4,major_locations,[3].location,river journey through the interior
+Heart of Darkness,memory,gpt-5.4,major_locations,[3].location_type,"natural, dangerous, liminal"
+Heart of Darkness,memory,gpt-5.4,major_locations,[3].social_or_symbolic_significance,"Functions as a descent into psychological and moral darkness, stripping away social pretenses."
+Heart of Darkness,memory,gpt-5.4,major_locations,[4].location,remote wilderness outpost
+Heart of Darkness,memory,gpt-5.4,major_locations,[4].location_type,"isolated, natural, quasi-institutional"
+Heart of Darkness,memory,gpt-5.4,major_locations,[4].social_or_symbolic_significance,Shows what happens when power is unchecked and social restraints collapse around a charismatic figure.
+Heart of Darkness,memory,gpt-5.4,major_locations,[5].location,domestic drawing-room world
+Heart of Darkness,memory,gpt-5.4,major_locations,[5].location_type,"domestic, urban, respectable"
+Heart of Darkness,memory,gpt-5.4,major_locations,[5].social_or_symbolic_significance,Embodies comforting illusions that shield society from confronting brutal truths.
+Heart of Darkness,memory,gpt-5.4,central_conflict,summary,"Marlow's journey to find Kurtz becomes a confrontation with the moral bankruptcy of imperialism and the capacity for darkness within supposedly civilized people, including himself."
+Heart of Darkness,memory,gpt-5.4,central_conflict,structural_type,person vs. self
+Heart of Darkness,memory,gpt-5.4,central_conflict,thematic_opposing_force,imperial ideology versus moral truth; civilized identity versus inner savagery
+Heart of Darkness,memory,gpt-5.4,principal_actions,[1].action,Accepts a riverboat command in the colonial enterprise
+Heart of Darkness,memory,gpt-5.4,principal_actions,[1].relationship_to_values_or_goals,"Pursues adventure, professional purpose, and curiosity about unknown places."
+Heart of Darkness,memory,gpt-5.4,principal_actions,[2].action,Observes the suffering and disorder at the colonial stations
+Heart of Darkness,memory,gpt-5.4,principal_actions,[2].relationship_to_values_or_goals,His commitment to honest perception deepens as imperial rhetoric clashes with visible cruelty.
+Heart of Darkness,memory,gpt-5.4,principal_actions,[3].action,Repairs and prepares the steamer for the upriver journey
+Heart of Darkness,memory,gpt-5.4,principal_actions,[3].relationship_to_values_or_goals,"Acts from duty, competence, and determination to reach Kurtz."
+Heart of Darkness,memory,gpt-5.4,principal_actions,[4].action,Travels deeper into the interior despite danger and uncertainty
+Heart of Darkness,memory,gpt-5.4,principal_actions,[4].relationship_to_values_or_goals,Pursues truth and completion of his mission even as the journey becomes morally unsettling.
+Heart of Darkness,memory,gpt-5.4,principal_actions,[5].action,Listens to stories and rumors about Kurtz
+Heart of Darkness,memory,gpt-5.4,principal_actions,[5].relationship_to_values_or_goals,His curiosity shifts from admiration of talent to concern about corruption and power.
+Heart of Darkness,memory,gpt-5.4,principal_actions,[6].action,"Witnesses violence, fear, and the breakdown of civilized norms on the river"
+Heart of Darkness,memory,gpt-5.4,principal_actions,[6].relationship_to_values_or_goals,His moral awareness sharpens as he sees how fragile restraint and dignity are.
+Heart of Darkness,memory,gpt-5.4,principal_actions,[7].action,Meets Kurtz and recognizes both his charisma and his spiritual collapse
+Heart of Darkness,memory,gpt-5.4,principal_actions,[7].relationship_to_values_or_goals,Confronts the extreme outcome of ambition without conscience.
+Heart of Darkness,memory,gpt-5.4,principal_actions,[8].action,Prevents Kurtz from fully escaping back into the wilderness
+Heart of Darkness,memory,gpt-5.4,principal_actions,[8].relationship_to_values_or_goals,Attempts to uphold duty and preserve some remnant of order against total dissolution.
+Heart of Darkness,memory,gpt-5.4,principal_actions,[9].action,Receives Kurtz's final words and reflects on their meaning
+Heart of Darkness,memory,gpt-5.4,principal_actions,[9].relationship_to_values_or_goals,Seeks moral understanding in the face of horror and human self-revelation.
+Heart of Darkness,memory,gpt-5.4,principal_actions,[10].action,Lies to Kurtz's Intended about Kurtz's last words
+Heart of Darkness,memory,gpt-5.4,principal_actions,[10].relationship_to_values_or_goals,Sacrifices truth to protect innocence and preserve a social illusion he cannot fully destroy.
+Heart of Darkness,memory,gpt-5.4,values_pursued,[1].value,truth
+Heart of Darkness,memory,gpt-5.4,values_pursued,[1].explanation,Marlow tries to see beyond imperial propaganda and understand what people and institutions really are.
+Heart of Darkness,memory,gpt-5.4,values_pursued,[2].value,duty
+Heart of Darkness,memory,gpt-5.4,values_pursued,[2].explanation,He remains committed to his role as captain and to completing the journey.
+Heart of Darkness,memory,gpt-5.4,values_pursued,[3].value,self-knowledge
+Heart of Darkness,memory,gpt-5.4,values_pursued,[3].explanation,His experience becomes an inquiry into the human soul and his own moral limits.
+Heart of Darkness,memory,gpt-5.4,values_pursued,[4].value,restraint
+Heart of Darkness,memory,gpt-5.4,values_pursued,[4].explanation,He values discipline and the fragile structures that keep brutality in check.
+Heart of Darkness,memory,gpt-5.4,values_pursued,[5].value,integrity
+Heart of Darkness,memory,gpt-5.4,values_pursued,[5].explanation,"He seeks an honest moral stance amid corruption, even when certainty is elusive."
+Heart of Darkness,memory,gpt-5.4,values_threatened,[1].value,human dignity
+Heart of Darkness,memory,gpt-5.4,values_threatened,[1].explanation,"Colonial exploitation reduces African people to instruments, spectacles, and victims."
+Heart of Darkness,memory,gpt-5.4,values_threatened,[2].value,moral clarity
+Heart of Darkness,memory,gpt-5.4,values_threatened,[2].explanation,"The journey blurs distinctions between civilization and barbarism, making judgment difficult."
+Heart of Darkness,memory,gpt-5.4,values_threatened,[3].value,truthfulness
+Heart of Darkness,memory,gpt-5.4,values_threatened,[3].explanation,"Social life depends on comforting lies, culminating in Marlow's deception to the Intended."
+Heart of Darkness,memory,gpt-5.4,values_threatened,[4].value,sanity
+Heart of Darkness,memory,gpt-5.4,values_threatened,[4].explanation,"Isolation, power, and proximity to violence threaten psychological stability."
+Heart of Darkness,memory,gpt-5.4,values_threatened,[5].value,civilized restraint
+Heart of Darkness,memory,gpt-5.4,values_threatened,[5].explanation,Kurtz's collapse shows how quickly conscience and limits can be abandoned.
+Heart of Darkness,memory,gpt-5.4,consequence_resolution,ending_summary,"Kurtz dies after uttering a final judgment on his life and soul. Marlow returns to Europe disillusioned, carrying a deeper awareness of imperial cruelty and human darkness. He preserves the Intended's illusion by lying about Kurtz's last words."
+Heart of Darkness,memory,gpt-5.4,consequence_resolution,moral_significance,"The ending suggests that confronting truth can reveal unbearable moral emptiness, and that societies often survive by masking violence with noble language and sentimental illusions."
+Heart of Darkness,memory,gpt-5.4,story_morals,[1],Power without conscience turns civilization into savagery.
+Heart of Darkness,memory,gpt-5.4,story_morals,[2],The darkest truths are often hidden beneath noble ideals.
+Heart of Darkness,memory,gpt-5.4,story_morals,[3],To know humanity honestly is to confront the darkness within oneself.
+Heart of Darkness,memory,gemini-3.1-pro-preview,protagonist,name,Charles Marlow
+Heart of Darkness,memory,gemini-3.1-pro-preview,protagonist,description,"A philosophical, observant, and experienced sailor who works as a steamboat captain for a Belgian trading company."
+Heart of Darkness,memory,gemini-3.1-pro-preview,protagonist,primary_goal,"To navigate the Congo River, retrieve the enigmatic ivory trader Kurtz, and uncover the truth behind the Company's operations."
+Heart of Darkness,memory,gemini-3.1-pro-preview,major_themes,[1],Imperialism and colonization
+Heart of Darkness,memory,gemini-3.1-pro-preview,major_themes,[2],The darkness of human nature
+Heart of Darkness,memory,gemini-3.1-pro-preview,major_themes,[3],Madness and isolation
+Heart of Darkness,memory,gemini-3.1-pro-preview,major_themes,[4],The hypocrisy of civilization
+Heart of Darkness,memory,gemini-3.1-pro-preview,major_themes,[5],Moral ambiguity and corruption
+Heart of Darkness,memory,gemini-3.1-pro-preview,major_locations,[1].location,The Congo River and Jungle
+Heart of Darkness,memory,gemini-3.1-pro-preview,major_locations,[1].location_type,Natural
+Heart of Darkness,memory,gemini-3.1-pro-preview,major_locations,[1].social_or_symbolic_significance,"Represents the primal, untamed forces of nature and the subconscious mind, which strip away the fragile facade of civilization."
+Heart of Darkness,memory,gemini-3.1-pro-preview,major_locations,[2].location,The Company Stations
+Heart of Darkness,memory,gemini-3.1-pro-preview,major_locations,[2].location_type,Institutional
+Heart of Darkness,memory,gemini-3.1-pro-preview,major_locations,[2].social_or_symbolic_significance,"Represents the brutal, inefficient, and exploitative machinery of European imperialism."
+Heart of Darkness,memory,gemini-3.1-pro-preview,major_locations,[3].location,The Sepulchral City (Brussels)
+Heart of Darkness,memory,gemini-3.1-pro-preview,major_locations,[3].location_type,Urban
+Heart of Darkness,memory,gemini-3.1-pro-preview,major_locations,[3].social_or_symbolic_significance,"Represents the hollow, hypocritical core of European civilization that hides its dark, violent deeds behind a facade of progress and noble ideals."
+Heart of Darkness,memory,gemini-3.1-pro-preview,central_conflict,summary,Marlow struggles to maintain his sanity and moral compass while witnessing the brutal reality of imperialism and confronting the terrifying depths of human depravity embodied by Kurtz.
+Heart of Darkness,memory,gemini-3.1-pro-preview,central_conflict,structural_type,person vs. self
+Heart of Darkness,memory,gemini-3.1-pro-preview,central_conflict,thematic_opposing_force,Imperial hypocrisy and the primal savagery of human nature
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[1].action,Secures a steamboat captain position with the Company
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[1].relationship_to_values_or_goals,Driven by a lifelong curiosity and desire for exploration.
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[2].action,Witnesses the suffering of enslaved indigenous people at the Outer Station
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[2].relationship_to_values_or_goals,Awakens his empathy and challenges his assumptions about European civilizing missions.
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[3].action,Spends months repairing a sunken steamboat at the Central Station
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[3].relationship_to_values_or_goals,Demonstrates his commitment to duty and the value of work as a means to maintain sanity.
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[4].action,Navigates the treacherous river toward the Inner Station
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[4].relationship_to_values_or_goals,Reflects his perseverance and determination to fulfill his mission and find Kurtz.
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[5].action,Survives an attack by indigenous people on the river
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[5].relationship_to_values_or_goals,Tests his resilience and survival instincts in a hostile environment.
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[6].action,Interviews the Russian Harlequin to learn about Kurtz's methods
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[6].relationship_to_values_or_goals,Advances his pursuit of truth regarding Kurtz's descent into madness and tyranny.
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[7].action,Confronts Kurtz in the jungle and convinces him to return to the boat
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[7].relationship_to_values_or_goals,Fulfills his professional duty while engaging in a profound moral confrontation with human darkness.
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[8].action,"Listens to Kurtz's final words, 'The horror! The horror!'"
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[8].relationship_to_values_or_goals,Forces Marlow to witness the ultimate existential truth of human depravity.
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[9].action,Returns to Europe and isolates himself from society
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[9].relationship_to_values_or_goals,"Reflects his alienation and commitment to the grim reality he discovered, rejecting societal ignorance."
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[10].action,Lies to Kurtz's Intended about his final words
+Heart of Darkness,memory,gemini-3.1-pro-preview,principal_actions,[10].relationship_to_values_or_goals,"Represents a moral compromise, sacrificing absolute truth for compassion to protect her fragile illusions."
+Heart of Darkness,memory,gemini-3.1-pro-preview,values_pursued,[1].value,Truth
+Heart of Darkness,memory,gemini-3.1-pro-preview,values_pursued,[1].explanation,Marlow seeks to understand the reality behind the Company's noble rhetoric and the legend of Kurtz.
+Heart of Darkness,memory,gemini-3.1-pro-preview,values_pursued,[2].value,Duty
+Heart of Darkness,memory,gemini-3.1-pro-preview,values_pursued,[2].explanation,He relies on the discipline of his work and his obligations as a captain to keep himself grounded.
+Heart of Darkness,memory,gemini-3.1-pro-preview,values_pursued,[3].value,Restraint
+Heart of Darkness,memory,gemini-3.1-pro-preview,values_pursued,[3].explanation,He values the self-control required to resist the primal temptations and madness of the jungle.
+Heart of Darkness,memory,gemini-3.1-pro-preview,values_threatened,[1].value,Sanity
+Heart of Darkness,memory,gemini-3.1-pro-preview,values_threatened,[1].explanation,The psychological toll of the wilderness and the horrors of imperialism constantly threaten his mind.
+Heart of Darkness,memory,gemini-3.1-pro-preview,values_threatened,[2].value,Integrity
+Heart of Darkness,memory,gemini-3.1-pro-preview,values_threatened,[2].explanation,His commitment to honesty is ultimately compromised when he lies to Kurtz's Intended.
+Heart of Darkness,memory,gemini-3.1-pro-preview,values_threatened,[3].value,Humanity
+Heart of Darkness,memory,gemini-3.1-pro-preview,values_threatened,[3].explanation,"The risk of succumbing to primal savagery and losing one's moral compass, as Kurtz did, is ever-present."
+Heart of Darkness,memory,gemini-3.1-pro-preview,consequence_resolution,ending_summary,"Marlow returns to Europe, deeply changed and alienated from a society he now views as ignorant. He visits Kurtz's grieving fiancée and lies to her, claiming Kurtz's last word was her name rather than 'The horror!'"
+Heart of Darkness,memory,gemini-3.1-pro-preview,consequence_resolution,moral_significance,"The ending highlights the inescapable darkness within humanity and suggests that 'civilized' society is sustained only by fragile, hypocritical illusions, as the absolute truth is too devastating to bear."
+Heart of Darkness,memory,gemini-3.1-pro-preview,story_morals,[1],"The veneer of civilization is thin, easily stripped away to reveal the primal darkness within human nature."
+Heart of Darkness,memory,gemini-3.1-pro-preview,story_morals,[2],Unchecked power and isolation breed madness and moral corruption.
+Heart of Darkness,memory,gemini-3.1-pro-preview,story_morals,[3],Society often relies on comforting lies to shield itself from the horrifying truths of its own making.

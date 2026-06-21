@@ -1,0 +1,19 @@
+generation_id,filename,input_condition,model,moral_index,moral_text
+Heart of Darkness__full_text__gpt-5.4,Heart of Darkness,full_text,gpt-5.4,1,"When power is unchecked by restraint, the darkness within us takes command."
+Heart of Darkness__full_text__gpt-5.4,Heart of Darkness,full_text,gpt-5.4,2,Fine ideals mean little when greed and self-deception rule the heart.
+Heart of Darkness__full_text__gpt-5.4,Heart of Darkness,full_text,gpt-5.4,3,"To face the truth about human nature is painful, but blindness is more dangerous."
+Heart of Darkness__full_text__gemini-3.1-pro-preview,Heart of Darkness,full_text,gemini-3.1-pro-preview,1,The veneer of civilization is fragile and easily stripped away to reveal the primal darkness within human nature.
+Heart of Darkness__full_text__gemini-3.1-pro-preview,Heart of Darkness,full_text,gemini-3.1-pro-preview,2,"Absolute power and isolation, devoid of societal restraint, inevitably lead to moral corruption and madness."
+Heart of Darkness__full_text__gemini-3.1-pro-preview,Heart of Darkness,full_text,gemini-3.1-pro-preview,3,Society often relies on comforting illusions and lies to shield itself from the horrifying truths of its own existence.
+Heart of Darkness__chunk_summary__gpt-5.4,Heart of Darkness,chunk_summary,gpt-5.4,1,Unchecked power strips away civilization and reveals the darkness within.
+Heart of Darkness__chunk_summary__gpt-5.4,Heart of Darkness,chunk_summary,gpt-5.4,2,Fine ideals become cruelty when greed rules the heart.
+Heart of Darkness__chunk_summary__gpt-5.4,Heart of Darkness,chunk_summary,gpt-5.4,3,Seeing the truth about evil does not spare one from complicity.
+Heart of Darkness__chunk_summary__gemini-3.1-pro-preview,Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,1,"Without the external restraints of society, the human soul is highly susceptible to corruption and primal darkness."
+Heart of Darkness__chunk_summary__gemini-3.1-pro-preview,Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,2,"The rhetoric of civilization and progress often masks profound greed, brutality, and moral emptiness."
+Heart of Darkness__chunk_summary__gemini-3.1-pro-preview,Heart of Darkness,chunk_summary,gemini-3.1-pro-preview,3,Protecting the innocent from terrible truths sometimes requires sacrificing one's own moral purity through deception.
+Heart of Darkness__memory__gpt-5.4,Heart of Darkness,memory,gpt-5.4,1,Power without conscience turns civilization into savagery.
+Heart of Darkness__memory__gpt-5.4,Heart of Darkness,memory,gpt-5.4,2,The darkest truths are often hidden beneath noble ideals.
+Heart of Darkness__memory__gpt-5.4,Heart of Darkness,memory,gpt-5.4,3,To know humanity honestly is to confront the darkness within oneself.
+Heart of Darkness__memory__gemini-3.1-pro-preview,Heart of Darkness,memory,gemini-3.1-pro-preview,1,"The veneer of civilization is thin, easily stripped away to reveal the primal darkness within human nature."
+Heart of Darkness__memory__gemini-3.1-pro-preview,Heart of Darkness,memory,gemini-3.1-pro-preview,2,Unchecked power and isolation breed madness and moral corruption.
+Heart of Darkness__memory__gemini-3.1-pro-preview,Heart of Darkness,memory,gemini-3.1-pro-preview,3,Society often relies on comforting lies to shield itself from the horrifying truths of its own making.

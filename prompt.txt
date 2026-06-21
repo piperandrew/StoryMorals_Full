@@ -1,0 +1,25 @@
+Given the following story, analyze the narrative from the perspective of the protagonist and produce a structured JSON output.
+
+The goal is to identify both the story’s document-level moral meaning and the narrative context in which that moral is enacted. Treat the “story moral” as a synthesis of the story as a whole, not as a summary of a single event. The other fields should describe the protagonist-centered narrative conditions through which the moral becomes meaningful.
+
+Instructions:
+1. Focus on the protagonist. The protagonist is the central “who” of the analysis.
+2. Identify the major themes of the story.
+3. Identify the major locations or settings: focus on generic labels not particular places, ie. whether the world is urban, rural, wealthy, poor, domestic, public, institutional, natural, fantastical, etc.
+4. Identify the central conflict, dilemma, or opposing force.
+    * Include the structural conflict type from this list:  person vs. person, person vs. self, person vs. society, person vs. nature, person vs. fate, person vs. technology, or person vs. supernatural.
+    * Also include the thematic opposing force or dilemma, such as political oppression, environmental collapse, social exclusion, poverty, family obligation, serving family v. country, etc.
+5. List the protagonist’s principal actions, up to 10. These should be general actions rather than excessive plot details, and each should be connected to the protagonist’s values, goals, or moral trajectory.
+6. Identify the main values pursued by the protagonist.
+7. Identify the main values threatened, violated, sacrificed, or placed at risk from the protagonist’s perspective.
+8. Describe the consequence, ending, or resolution of the story.
+9. Generate exactly three plausible story morals. Each moral should be a concise, pithy, memorable statement. The morals should be distinct from one another but all plausibly grounded in the story. They should reflect the story’s larger message or values.
+Output requirements:
+* Return only valid JSON.
+* Do not include markdown, commentary, or explanation outside the JSON.
+* Use concise but informative language.
+* If information is unclear or unavailable, use null or an empty array rather than inventing details.
+* Values should be expressed as short abstract nouns or noun phrases, such as “loyalty,” “freedom,” “justice,” “self-sacrifice,” “family duty,” “ambition,” “compassion,” “dignity,” or “survival.”
+* Story morals should be phrased as generalizable lessons, not plot summaries.
+Use the following JSON structure:
+{ "protagonist": { "name": "", "description": "", "primary_goal": "" }, "major_themes": [ "" ], "major_locations": [ { "location": "", "location_type": "", "social_or_symbolic_significance": "" } ], "central_conflict": { "summary": "", "structural_type": "", "thematic_opposing_force": "" }, "principal_actions": [ { "action": "", "relationship_to_values_or_goals": "" } ], "values_pursued": [ { "value": "", "explanation": "" } ], "values_threatened": [ { "value": "", "explanation": "" } ], "consequence_resolution": { "ending_summary": "", "moral_significance": "" }, "story_morals": [ "", "", "" ] }  Story: [INSERT STORY HERE]
