@@ -23,7 +23,7 @@ These are generated under combinations of:
   `chunk_summary` (the summary), and `memory` (no text supplied — the model uses
   only the title and author).
 
-Note: a sample book Heart of Darkness is included with its respective outputs.
+**Note: a sample book *Heart of Darkness* is included with its respective outputs.**
 
 ---
 
