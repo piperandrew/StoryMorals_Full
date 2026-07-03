@@ -169,8 +169,11 @@ def _call_gemini(model, prompt, *, max_tokens, temperature, use_temperature,
         gen["responseMimeType"] = "application/json"
     if use_temperature:
         gen["temperature"] = temperature
-    if max_tokens:
-        gen["maxOutputTokens"] = max_tokens
+    # NB: we deliberately do NOT set maxOutputTokens for Gemini. On reasoning
+    # models (e.g. gemini-3.x) the cap counts thinking tokens too, so a modest
+    # limit gets consumed by reasoning and truncates the actual JSON reply.
+    # `max_tokens` therefore only applies to the OpenAI path.
+    _ = max_tokens
 
     payload: dict = {"contents": [{"parts": [{"text": prompt}]}],
                      "generationConfig": gen}

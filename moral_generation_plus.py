@@ -91,25 +91,38 @@ def _moral_at(morals, i):
     return morals[i] if isinstance(morals, list) and len(morals) > i else None
 
 
+def _dedupe_latest(records):
+    """Keep the last record per (filename, condition, model).
+
+    The JSONL is append-only, so a retried generation adds a new line after the
+    old (failed) one; keeping the last occurrence makes the success win.
+    """
+    latest = {}
+    for d in records:
+        latest[_key(d["filename"], d["input_condition"], d["model"])] = d
+    return list(latest.values())
+
+
 def _rebuild_index(raw_jsonl: Path, output_csv: Path):
     index_cols = ["filename", "input_condition", "model", "parse_ok",
                   "story_moral_1", "story_moral_2", "story_moral_3", "timestamp"]
     rows = []
     if raw_jsonl.exists():
+        recs = []
         with open(raw_jsonl, encoding="utf-8") as f:
             for line in f:
-                if not line.strip():
-                    continue
-                d = json.loads(line)
-                res = d.get("result")
-                morals = res.get("story_morals") if isinstance(res, dict) else None
-                rows.append({
-                    "filename": d["filename"], "input_condition": d["input_condition"],
-                    "model": d["model"], "parse_ok": d["parse_ok"],
-                    "story_moral_1": _moral_at(morals, 0),
-                    "story_moral_2": _moral_at(morals, 1),
-                    "story_moral_3": _moral_at(morals, 2), "timestamp": d["timestamp"],
-                })
+                if line.strip():
+                    recs.append(json.loads(line))
+        for d in _dedupe_latest(recs):
+            res = d.get("result")
+            morals = res.get("story_morals") if isinstance(res, dict) else None
+            rows.append({
+                "filename": d["filename"], "input_condition": d["input_condition"],
+                "model": d["model"], "parse_ok": d["parse_ok"],
+                "story_moral_1": _moral_at(morals, 0),
+                "story_moral_2": _moral_at(morals, 1),
+                "story_moral_3": _moral_at(morals, 2), "timestamp": d["timestamp"],
+            })
     df = pd.DataFrame(rows, columns=index_cols)
     df.to_csv(output_csv, index=False)
     return df
@@ -140,15 +153,25 @@ def run_generate(args):
         print(f"WARNING: {args.summaries_csv} not found — chunk_summary condition skipped.")
     print(f"{len(meta)} book(s) in metadata; {len(summaries)} chunk summary(ies).")
 
-    # Resume: a (book, condition, model) is done if already in the JSONL.
+    # Resume: a (book, condition, model) counts as done only if it PARSED. A
+    # record whose parse_ok is False is retried on the next run (the fresh
+    # record supersedes it — see _dedupe_latest, which keeps the last per key).
     done = set()
+    n_failed = 0
     if raw_jsonl.exists():
         with open(raw_jsonl, encoding="utf-8") as f:
             for line in f:
-                if line.strip():
-                    d = json.loads(line)
+                if not line.strip():
+                    continue
+                d = json.loads(line)
+                if d.get("parse_ok"):
                     done.add(_key(d["filename"], d["input_condition"], d["model"]))
-        print(f"Resuming — {len(done)} generation(s) already in {raw_jsonl}")
+                else:
+                    n_failed += 1
+        msg = f"Resuming — {len(done)} successful generation(s) already in {raw_jsonl}"
+        if n_failed:
+            msg += f"; {n_failed} unparsed record(s) will be retried"
+        print(msg)
 
     n_new = 0
     for book_id, info in meta.items():
@@ -239,6 +262,7 @@ def _load_records(raw_jsonl: Path, raw_csv: Path):
             for line in f:
                 if line.strip():
                     recs.append(json.loads(line))
+        recs = _dedupe_latest(recs)
         print(f"Loaded {len(recs)} record(s) from {raw_jsonl}")
         return recs
     if raw_csv.exists():
@@ -443,6 +467,7 @@ def run_validate(args):
                 records.append(json.loads(line))
     if not records:
         raise ValueError(f"No records in {raw_jsonl}")
+    records = _dedupe_latest(records)
 
     story = args.story if args.story is not None else records[0]["filename"]
     selected = [r for r in records
