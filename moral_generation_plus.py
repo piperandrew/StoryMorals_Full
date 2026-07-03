@@ -153,24 +153,44 @@ def run_generate(args):
         print(f"WARNING: {args.summaries_csv} not found — chunk_summary condition skipped.")
     print(f"{len(meta)} book(s) in metadata; {len(summaries)} chunk summary(ies).")
 
-    # Resume: a (book, condition, model) counts as done only if it PARSED. A
-    # record whose parse_ok is False is retried on the next run (the fresh
-    # record supersedes it — see _dedupe_latest, which keeps the last per key).
+    # Resume: a (book, condition, model) counts as done only if it PARSED.
+    # Before spending an API call to retry an unparsed record, try to SALVAGE
+    # its saved raw reply with the current (tolerant) parser — a reply that
+    # failed under an older parser often parses now, recovering it for free.
+    # Anything still unparsed is retried; the fresh record supersedes the old
+    # one (see _dedupe_latest, which keeps the last per key).
     done = set()
-    n_failed = 0
     if raw_jsonl.exists():
+        recs = []
         with open(raw_jsonl, encoding="utf-8") as f:
             for line in f:
-                if not line.strip():
-                    continue
-                d = json.loads(line)
-                if d.get("parse_ok"):
-                    done.add(_key(d["filename"], d["input_condition"], d["model"]))
-                else:
-                    n_failed += 1
-        msg = f"Resuming — {len(done)} successful generation(s) already in {raw_jsonl}"
-        if n_failed:
-            msg += f"; {n_failed} unparsed record(s) will be retried"
+                if line.strip():
+                    recs.append(json.loads(line))
+        recovered = retry = 0
+        for d in _dedupe_latest(recs):
+            key = _key(d["filename"], d["input_condition"], d["model"])
+            if d.get("parse_ok"):
+                done.add(key)
+                continue
+            salvaged = common.extract_json(d.get("raw_text") or "")
+            if isinstance(salvaged, dict):
+                rec = {
+                    "filename": d["filename"], "input_condition": d["input_condition"],
+                    "model": d["model"], "parse_ok": True,
+                    "timestamp": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                    "result": salvaged, "raw_text": None,
+                }
+                with open(raw_jsonl, "a", encoding="utf-8") as f:
+                    f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+                done.add(key)
+                recovered += 1
+            else:
+                retry += 1
+        msg = f"Resuming — {len(done)} successful generation(s) in {raw_jsonl}"
+        if recovered:
+            msg += f"; recovered {recovered} by re-parsing saved replies"
+        if retry:
+            msg += f"; {retry} still unparsed, will retry"
         print(msg)
 
     n_new = 0

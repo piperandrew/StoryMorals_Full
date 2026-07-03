@@ -232,23 +232,86 @@ def call_model(model, prompt, *, max_tokens, temperature=0, use_temperature=True
 # JSON extraction helpers
 # ---------------------------------------------------------------------------
 
+def _repair_truncated_json(s):
+    """Best-effort close of an unterminated JSON object/array.
+
+    Walks `s` tracking string state and a stack of open `{`/`[`, then appends
+    the matching closers for anything still open (and closes a dangling string).
+    Handles the common flaky-model case where the reply is otherwise complete
+    but missing its final brace(s). Returns None if nothing needs repair.
+    """
+    stack = []
+    in_str = esc = False
+    for ch in s:
+        if in_str:
+            if esc:
+                esc = False
+            elif ch == "\\":
+                esc = True
+            elif ch == '"':
+                in_str = False
+            continue
+        if ch == '"':
+            in_str = True
+        elif ch in "{[":
+            stack.append(ch)
+        elif ch == "}" and stack and stack[-1] == "{":
+            stack.pop()
+        elif ch == "]" and stack and stack[-1] == "[":
+            stack.pop()
+    if not stack and not in_str:
+        return None  # already balanced — nothing to repair
+
+    core = s.rstrip()
+    if in_str:
+        core += '"'
+    core = core.rstrip()
+    if core.endswith(","):        # drop a dangling comma before the closers
+        core = core[:-1]
+    for opener in reversed(stack):
+        core += "}" if opener == "{" else "]"
+    return core
+
+
 def extract_json(txt):
-    """Parse a JSON object from a model reply (tolerant of code fences / prose)."""
+    """Parse a JSON object from a model reply, tolerant of code fences, leading
+    prose, trailing junk (e.g. a stray extra brace), and a missing closing brace.
+    """
     if not txt:
         return None
     t = txt.strip()
     if t.startswith("```"):
         t = re.sub(r"^```(?:json)?", "", t).rsplit("```", 1)[0].strip()
+
+    # 1) Straight parse.
     try:
         return json.loads(t)
     except Exception:
-        m = re.search(r"\{.*\}", t, re.S)  # fall back to the outermost {...}
-        if m:
-            try:
-                return json.loads(m.group(0))
-            except Exception:
-                return None
+        pass
+
+    # Work from the first '{' onward (drops any leading prose).
+    start = t.find("{")
+    if start == -1:
         return None
+    sub = t[start:]
+
+    # 2) Decode the first complete JSON value; this ignores trailing data such
+    #    as a stray extra '}' that some models append.
+    try:
+        obj, _ = json.JSONDecoder().raw_decode(sub)
+        if isinstance(obj, dict):
+            return obj
+    except Exception:
+        pass
+
+    # 3) Repair an unterminated object/array (missing closing brace/bracket).
+    repaired = _repair_truncated_json(sub)
+    if repaired is not None:
+        try:
+            return json.loads(repaired)
+        except Exception:
+            pass
+    return None
 
 
 def extract_json_array(txt):
