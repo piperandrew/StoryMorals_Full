@@ -1,0 +1,13 @@
+# Secrets — never commit API keys
+.env
+
+# Generated workflow outputs
+outputs/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter / OS cruft
+.ipynb_checkpoints/
+.DS_Store

@@ -1,14 +1,24 @@
 # Book → Morals → Values workflow
 
-A set of Jupyter notebooks that read the **moral content of books at scale**.
-Point it at a folder of plain-text books and it produces, for each book: short
-plot summaries, three "story morals" plus a structured set of narrative
-dimensions, and a labeling of each moral against a fixed value taxonomy — all
-optionally across several models and several ways of "seeing" the book.
+Two Python scripts that read the **moral content of books at scale**. Point them
+at a folder of plain-text books and they produce, for each book: short plot
+summaries, three "story morals" plus a structured set of narrative dimensions,
+and a labeling of each moral against a fixed value taxonomy — all optionally
+across several models and several ways of "seeing" the book.
+
+## The two workflows
+
+| Script | What it does |
+|--------|--------------|
+| **`summarization.py`** | Reduces each book to a chunk-by-chunk plot summary and a one-paragraph short summary. |
+| **`moral_generation_plus.py`** | Everything downstream, in one script: generate morals + narrative dimensions, parse to tidy tables, label morals against the value taxonomy, and build a validation table. |
+
+`moral_generation_plus.py` runs four steps in order — `generate`, `parse`,
+`values`, `validate` (formerly notebooks 2–5). Run them all, or name a subset.
 
 ## What it produces (high level)
 
-For every book the workflow generates:
+For every book:
 
 - **Summaries** — a chunk-by-chunk plot summary and a one-paragraph summary.
 - **Morals + narrative dimensions** — three story morals, plus the protagonist,
@@ -19,25 +29,47 @@ For every book the workflow generates:
 These are generated under combinations of:
 
 - **Models** — e.g. GPT and Gemini, to compare how different models read a book.
+  The models for moral generation and for value extraction are configured
+  **separately** (they may differ) — see [`models.txt`](#modelstxt).
 - **Input representations ("conditions")** — `full_text` (the whole book),
   `chunk_summary` (the summary), and `memory` (no text supplied — the model uses
   only the title and author).
 
-**Note: a sample book *Heart of Darkness* is included with its respective outputs for demonstration purposes.**
+**Note:** a sample book *Heart of Darkness* is included with its outputs for
+demonstration.
 
 ---
 
 ## Requirements
 
-- **Python 3** with: `openai`, `tiktoken`, `pandas`, `requests` (and `pyarrow`
-  if you want Parquet). Install with:
+- **Python 3.10+** with `openai`, `tiktoken`, `pandas`, `requests`:
   ```bash
-  pip install openai tiktoken pandas requests
+  pip install -r requirements.txt
   ```
-- **API keys**, entered at runtime when each notebook prompts (never stored):
-  - **OpenAI** (`OPENAI_API_KEY`) — required.
-  - **Google Gemini** (`GEMINI_API_KEY` / `GOOGLE_API_KEY`) — required when a
-    `gemini-*` model is in the model list (the default).
+
+### API keys (never hard-coded)
+
+Keys are read at runtime from **environment variables** or an optional **`.env`**
+file, and are never written to disk. If a needed key is not set and you are
+running interactively, the script prompts for it (hidden input).
+
+| Provider | Environment variable | When needed |
+|----------|----------------------|-------------|
+| OpenAI | `OPENAI_API_KEY` | Any `gpt*` / `o1*` / `o3*` model. |
+| Google Gemini | `GEMINI_API_KEY` (or `GOOGLE_API_KEY`) | Any `gemini-*` model. |
+
+Set them in your shell:
+
+```bash
+export OPENAI_API_KEY=sk-...
+export GEMINI_API_KEY=...
+```
+
+…or copy `.env.example` to `.env` and fill it in (`.env` is git-ignored):
+
+```bash
+cp .env.example .env      # then edit .env
+```
 
 ---
 
@@ -48,120 +80,142 @@ These are generated under combinations of:
 | `InputTexts/` | One `.txt` file per book. The file name (without `.txt`) is the book's id. |
 | `meta.csv` | Columns `filename`, `Title`, `Author`. Supplies title/author for the `memory` condition. |
 | `prompt.txt` | The instruction + JSON schema used to extract morals and narrative dimensions. |
+| `models.txt` | The models per stage — see below. |
 | `Values_Taxonomy.csv` | The value taxonomy; **column 1** is the list of value labels. |
 
----
+### `models.txt`
 
-## The pipeline
+Lists the models used by `moral_generation_plus.py`, in two sections, because the
+models for moral generation and for value extraction may differ. One model per
+line; the provider is inferred from the name prefix. Comment out a line with `#`
+to drop that model.
 
-Run the notebooks in number order. Each reads the previous step's output, so
-the files flow straight through.
+```
+[moral_generation]
+gpt-5.4
+gemini-3.1-pro-preview
 
-| # | Notebook | What it addresses | Reads | Writes |
-|---|----------|-------------------|-------|--------|
-| 1 | `1_chunk_summarization.ipynb` | Makes each book usable at scale by reducing it to compact summaries. | `InputTexts/*.txt` | `summaries.csv` |
-| 2 | `2_moral_generation_plus.ipynb` | The core extraction: morals + narrative dimensions, across models and input conditions. | `InputTexts/`, `summaries.csv`, `meta.csv`, `prompt.txt` | `moral_generation_plus.jsonl` (+ `.csv` index) |
-| 3 | `3_parse_outputs.ipynb` | Turns the nested results into flat, analysis-ready tables. | `moral_generation_plus.jsonl` | `tidy/morals_long.csv`, `tidy/categories_wide.csv` |
-| 4 | `4_value_extraction.ipynb` | Maps each moral onto the fixed value taxonomy. | `tidy/morals_long.csv`, `Values_Taxonomy.csv` | `moral_values.csv` |
-| 5 | `5_validation_table.ipynb` | QA: lay out one story's outputs field-by-field for manual review. | `moral_generation_plus.jsonl` | `validation_table.csv` |
+[value_extraction]
+gpt-5.4
+gemini-3.1-pro-preview
+```
+
+(The summarization script uses a single model, set with `--model`; default
+`gpt-5.4-mini`.)
 
 ---
 
 ## How to run
 
-1. Put your books in `InputTexts/` and fill in `meta.csv`.
-2. Open each notebook **in order (1 → 5)** in Jupyter.
-3. Edit the **Parameters** cell near the top if you want to change anything
-   (paths, models, language, etc.).
-4. Run all cells. The notebook prompts for the needed API key(s) and writes its
-   output file(s).
-5. Move on to the next notebook.
+**1 — Summarize** the books:
 
-Every stage **checkpoints and resumes**: rerunning a notebook skips work already
-completed and only fills in what's missing, so interrupted runs are safe to
-restart.
+```bash
+python summarization.py
+# writes outputs/summaries.csv
+```
+
+**2 — Generate morals, parse, label values, and validate** (all four steps):
+
+```bash
+python moral_generation_plus.py
+# writes outputs/moral_generation_plus.jsonl (+ .csv), outputs/tidy/*.csv,
+#        outputs/moral_values.csv, outputs/validation_table.csv
+```
+
+Run a single step, or a subset in order:
+
+```bash
+python moral_generation_plus.py generate
+python moral_generation_plus.py values validate
+```
+
+All generated files land in **`outputs/`** (created automatically, and
+git-ignored), so a run over new material is self-contained — clear `outputs/` to
+start fresh. Inputs stay at the repo root. Override any path with its flag (e.g.
+`--output-csv`, `--tidy-dir`).
+
+Both scripts **checkpoint and resume**: rerunning skips work already completed
+and only fills in what's missing, so interrupted runs are safe to restart. Every
+setting has a command-line flag with a sensible default — run either script with
+`--help` to see them all.
 
 ---
 
 ## The steps in detail
 
-### 1 — `1_chunk_summarization.ipynb`
-Splits each book into fixed-size token chunks, summarizes each chunk as its ten
-most significant plot events, and concatenates them into a **chunk summary**;
-then condenses that into a one-paragraph **short summary**.
+### `summarization.py`
+Splits each book into fixed-size token chunks (via `tiktoken`), summarizes each
+chunk as its ten most significant plot events and concatenates them into a
+**chunk summary**, then condenses that into a one-paragraph **short summary**.
 
-- **Key parameters:** `INPUT_DIR`, `MODEL` (default `gpt-5.4-mini`), `LANGUAGE`
-  (default English), `CHUNK_SIZE_TOKENS`.
-- **Output:** `summaries.csv` — `filename`, `chunk_summary`, `short_summary`.
+- **Key flags:** `--input-dir`, `--output-csv`, `--model` (default
+  `gpt-5.4-mini`), `--language` (default English), `--chunk-size-tokens`.
+- **Reads:** `InputTexts/*.txt` · **Writes:** `outputs/summaries.csv`
+  (`filename`, `chunk_summary`, `short_summary`).
 
-### 2 — `2_moral_generation_plus.ipynb`
-For each book, each selected **input condition**, and each **model**, runs the
-`prompt.txt` extractor to produce a structured result: three story morals plus
-the narrative dimensions. The prompt is adapted automatically per condition
+### `moral_generation_plus.py`
+One script, four steps (run all by default, or name a subset):
+
+**`generate`** — For each book × input condition × moral-generation model, runs
+the `prompt.txt` extractor to produce a structured result: three story morals
+plus the narrative dimensions. The prompt is adapted automatically per condition
 (`full_text`, `chunk_summary`, `memory`).
+- **Models:** the `[moral_generation]` section of `models.txt`.
+- **Flags:** `--conditions`, `--max-output-tokens`.
+- **Reads:** `InputTexts/`, `outputs/summaries.csv`, `meta.csv`, `prompt.txt`.
+- **Writes:** `outputs/moral_generation_plus.jsonl` (full structured result — the
+  source of truth) and `outputs/moral_generation_plus.csv` (a slim index).
 
-- **Key parameters:** `MODELS` and `CONDITIONS` (one item per line — comment a
-  line out to drop that model/condition), `LANGUAGE`.
-- **Output:** `moral_generation_plus.jsonl` — one line per generation holding the
-  full structured result (the source of truth) — and `moral_generation_plus.csv`,
-  a slim index with the three morals.
+**`parse`** — Flattens the JSONL into tidy tables:
+- `outputs/tidy/morals_long.csv` — one row per moral.
+- `outputs/tidy/categories_wide.csv` — one row per generation, one column per category.
+- **Reads:** `outputs/moral_generation_plus.jsonl` · **Writes:** the two `outputs/tidy/` CSVs.
 
-### 3 — `3_parse_outputs.ipynb`
-Reads the JSONL and builds flat tables:
-
-- `tidy/morals_long.csv` — **one row per moral**.
-- `tidy/categories_wide.csv` — **one row per generation**, one column per
-  category (e.g. `protagonist` = the name; multi-valued fields are a single
-  scalar, or a JSON list when there is more than one value).
-
-Additional per-dimension tables (themes, values, actions, locations) are
-included as commented-out blocks you can enable.
-
-- **Output:** `tidy/morals_long.csv`, `tidy/categories_wide.csv`.
-
-### 4 — `4_value_extraction.ipynb`
-Labels each moral from `morals_long` against the taxonomy (column 1 of
-`Values_Taxonomy.csv`), using each model in `LABELING_MODELS`.
-
-- **Key parameters:** `LABELING_MODELS` (default GPT + Gemini, one per line),
-  `SHUFFLE_LABELS`.
-- **Output:** `moral_values.csv` — the `morals_long` columns plus a **`Values`**
+**`values`** — Labels each moral from `morals_long` against the taxonomy (column 1
+of `Values_Taxonomy.csv`), with each value-extraction model. API calls run in
+parallel across a thread pool.
+- **Models:** the `[value_extraction]` section of `models.txt`.
+- **Flags:** `--shuffle-labels` / `--no-shuffle-labels`, `--max-workers`.
+- **Reads:** `outputs/tidy/morals_long.csv`, `Values_Taxonomy.csv`.
+- **Writes:** `outputs/moral_values.csv` — the `morals_long` columns plus a **`Values`**
   column: a JSON object mapping each model to its chosen labels, e.g.
   `{"gpt-5.4": ["Harm", "Power"], "gemini-3.1-pro-preview": ["Authority"]}`.
-  Stays one row per moral.
 
-### 5 — `5_validation_table.ipynb`
-Flattens one story's outputs into a long table for manual checking — one row per
-answer, with its model and condition.
-
-- **Key parameters:** `STORY` (default: the first story in the file),
-  `CONDITIONS` and `MODELS` (default: all).
-- **Output:** `validation_table.csv` — `filename`, `input_condition`, `model`,
-  `main_category`, `sub_category`, `answer`.
+**`validate`** — Flattens one story's outputs into a long table for manual QA —
+one row per answer, with its model and condition.
+- **Flags:** `--story` (default: first story in the file),
+  `--validate-conditions`, `--validate-models`.
+- **Reads:** `outputs/moral_generation_plus.jsonl` · **Writes:**
+  `outputs/validation_table.csv` (`filename`, `input_condition`, `model`,
+  `main_category`, `sub_category`, `answer`).
 
 ---
 
 ## Output files
 
+All under `outputs/`:
+
 | File | From | Contents |
 |------|------|----------|
-| `summaries.csv` | 1 | `filename`, `chunk_summary`, `short_summary` |
-| `moral_generation_plus.jsonl` | 2 | Full structured result per generation (source of truth) |
-| `moral_generation_plus.csv` | 2 | Slim index: morals per generation |
-| `tidy/morals_long.csv` | 3 | One row per moral |
-| `tidy/categories_wide.csv` | 3 | One row per generation; one column per category |
-| `moral_values.csv` | 4 | `morals_long` + `Values` (labels per model) |
-| `validation_table.csv` | 5 | One story flattened for review |
+| `outputs/summaries.csv` | `summarization.py` | `filename`, `chunk_summary`, `short_summary` |
+| `outputs/moral_generation_plus.jsonl` | `generate` | Full structured result per generation (source of truth) |
+| `outputs/moral_generation_plus.csv` | `generate` | Slim index: morals per generation |
+| `outputs/tidy/morals_long.csv` | `parse` | One row per moral |
+| `outputs/tidy/categories_wide.csv` | `parse` | One row per generation; one column per category |
+| `outputs/moral_values.csv` | `values` | `morals_long` + `Values` (labels per model) |
+| `outputs/validation_table.csv` | `validate` | One story flattened for review |
 
 ---
 
 ## Configuration at a glance
 
-- **Models / conditions** are lists at the top of stages 2 and 4 (one per line) —
-  comment out a line to drop that model or condition.
-- **Language** (`LANGUAGE`) controls the output language of summaries (stage 1)
-  and morals (stage 2); default is English.
+- **Models** live in `models.txt` — one per line, in `[moral_generation]` and
+  `[value_extraction]` sections (they may differ). Summarization uses `--model`.
+- **API keys** come from the environment or a `.env` file — never hard-coded.
+- **Language** (`--language` on `summarization.py`) controls the summary language.
 - **Taxonomy** is `Values_Taxonomy.csv` (column 1 = labels); replace it to use a
   different value set.
 - **Prompt** for the morals + dimensions is `prompt.txt`; edit it to change what
-  is extracted (the notebooks adapt to it automatically).
+  is extracted (the script adapts to it automatically).
+- **Shared code** (API dispatch, key loading, `models.txt` parsing, JSON
+  helpers) lives in `common.py`.

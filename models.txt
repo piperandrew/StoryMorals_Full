@@ -1,0 +1,14 @@
+# models.txt — models used by the moral_generation_plus workflow.
+#
+# Two sections. The models for moral generation and for value extraction may
+# differ, so each has its own list. List one model per line; the provider is
+# inferred from the name prefix (gpt*/o1*/o3* -> OpenAI, gemini* -> Google).
+# Comment out a line with '#' to drop that model.
+
+[moral_generation]
+gpt-5.4
+gemini-3.1-pro-preview
+
+[value_extraction]
+gpt-5.4
+gemini-3.1-pro-preview
