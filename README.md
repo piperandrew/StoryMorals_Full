@@ -1,17 +1,19 @@
 # Book → Morals → Values workflow
 
-Two Python scripts that read the **moral content of books at scale**. Point them
+Python scripts that read the **moral content of books at scale**. Point them
 at a folder of plain-text books and they produce, for each book: short plot
 summaries, three "story morals" plus a structured set of narrative dimensions,
 and a labeling of each moral against a fixed value taxonomy — all optionally
-across several models and several ways of "seeing" the book.
+across several models and several ways of "seeing" the book — plus an optional
+readable per-book report.
 
-## The two workflows
+## The scripts
 
 | Script | What it does |
 |--------|--------------|
 | **`summarization.py`** | Reduces each book to a chunk-by-chunk plot summary and a one-paragraph short summary. |
 | **`moral_generation_plus.py`** | Everything downstream, in one script: generate morals + narrative dimensions, parse to tidy tables, label morals against the value taxonomy, and build a validation table. |
+| **`makeReport/make_report.py`** | Renders a readable per-book `.txt` report from the generated results; you pick one model and one input condition, and optionally include the story morals. |
 
 `moral_generation_plus.py` runs four steps in order — `generate`, `parse`,
 `values`, `validate` (formerly notebooks 2–5). Run them all, or name a subset.
@@ -21,10 +23,12 @@ across several models and several ways of "seeing" the book.
 For every book:
 
 - **Summaries** — a chunk-by-chunk plot summary and a one-paragraph summary.
-- **Morals + narrative dimensions** — three story morals, plus the protagonist,
-  themes, settings, central conflict, principal actions, values pursued, values
-  threatened, and the consequence/resolution.
+- **Morals + narrative dimensions** — three story morals, plus a brief plot
+  summary, the protagonist, themes, settings, central conflict, principal events,
+  values pursued, values threatened, and the consequence/resolution.
 - **Value labels** — the taxonomy values each moral expresses.
+- **Readable reports** — an optional per-book `.txt` report rendered from the
+  generated dimensions (see `makeReport/make_report.py`).
 
 These are generated under combinations of:
 
@@ -129,6 +133,14 @@ python moral_generation_plus.py generate
 python moral_generation_plus.py values validate
 ```
 
+**3 — (Optional) Render readable reports** from the generated results:
+
+```bash
+python makeReport/make_report.py
+# prompts for a model + input condition (and whether to include story morals),
+# then writes one report per book to makeReport/reports/<book>_report.txt
+```
+
 All generated files land in **`outputs/`** (created automatically, and
 git-ignored), so a run over new material is self-contained — clear `outputs/` to
 start fresh. Inputs stay at the repo root. Override any path with its flag (e.g.
@@ -189,6 +201,16 @@ one row per answer, with its model and condition.
   `outputs/validation_table.csv` (`filename`, `input_condition`, `model`,
   `main_category`, `sub_category`, `answer`).
 
+### `makeReport/make_report.py`
+Renders the structured results into a plain-text report per book — protagonist,
+summary, themes, locations, central conflict, principal events, values, and the
+consequence/resolution, laid out for reading. Interactive: it lists the models
+and input conditions found in the data and asks you to pick one of each, then
+whether to include the story morals. One report is written per unique book for
+that model + condition.
+- **Reads:** `outputs/moral_generation_plus.jsonl` (override with `--input`).
+- **Writes:** `makeReport/reports/<book>_report.txt` (override dir with `--outdir`).
+
 ---
 
 ## Output files
@@ -204,6 +226,7 @@ All under `outputs/`:
 | `outputs/tidy/categories_wide.csv` | `parse` | One row per generation; one column per category |
 | `outputs/moral_values.csv` | `values` | `morals_long` + `Values` (labels per model) |
 | `outputs/validation_table.csv` | `validate` | One story flattened for review |
+| `makeReport/reports/<book>_report.txt` | `make_report.py` | Readable per-book report for a chosen model + condition |
 
 ---
 
