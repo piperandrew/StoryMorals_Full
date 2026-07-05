@@ -326,10 +326,11 @@ def run_parse(args):
         cons = res.get("consequence_resolution") or {}
         wide.append({**base,
             "protagonist":            prot.get("name"),
+            "summary":                " ".join(s for s in _as_list(res.get("summary")) if s) or None,
             "major_themes":           _one_or_json(_pick(res.get("major_themes"))),
             "major_locations":        _one_or_json(_pick(res.get("major_locations"), "location")),
             "central_conflict":       conf.get("thematic_opposing_force"),
-            "principal_actions":      _one_or_json(_pick(res.get("principal_actions"), "action")),
+            "principal_events":       _one_or_json(_pick(res.get("principal_events"), "event")),
             "values_pursued":         _one_or_json(_pick(res.get("values_pursued"), "value")),
             "values_threatened":      _one_or_json(_pick(res.get("values_threatened"), "value")),
             "consequence_resolution": cons.get("moral_significance"),
@@ -341,7 +342,7 @@ def run_parse(args):
                  ).to_csv(args.tidy_dir / "morals_long.csv", index=False)
 
     wide_cols = ["generation_id", "filename", "input_condition", "model", "protagonist",
-                 "major_themes", "major_locations", "central_conflict", "principal_actions",
+                 "summary", "major_themes", "major_locations", "central_conflict", "principal_events",
                  "values_pursued", "values_threatened", "consequence_resolution", "story_morals"]
     pd.DataFrame(wide, columns=wide_cols).to_csv(args.tidy_dir / "categories_wide.csv", index=False)
 

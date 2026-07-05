@@ -1,0 +1,95 @@
+Heart of Darkness
+=================
+
+PROTAGONIST
+-----------
+Name: Charles Marlow
+Description:
+  A philosophical, observant, and experienced seaman who is deeply skeptical of
+  imperialistic hypocrisy.
+Primary goal:
+  To navigate an African river to retrieve the enigmatic agent Kurtz and uncover the truth
+  behind the colonial enterprise.
+
+SUMMARY
+-------
+  Marlow takes a job as a riverboat captain for a European ivory trading company in
+  Africa, where he witnesses the brutal and absurd realities of imperialism. He becomes
+  fascinated by Kurtz, a legendary agent who has abandoned civilized morals to rule over a
+  local tribe as a brutal demigod. After Kurtz's death, a disillusioned Marlow returns to
+  Europe and lies to Kurtz's fiancée to protect her from the horrifying truth of human
+  nature.
+
+MAJOR THEMES
+------------
+- imperialism
+- hypocrisy
+- human darkness
+- alienation
+- truth versus illusion
+
+MAJOR LOCATIONS
+---------------
+- The Thames River estuary
+    Type: natural and public
+    Significance: Serves as the framing setting, symbolizing the threshold between the
+    civilized world and the dark unknown.
+- The Company Offices
+    Type: urban and institutional
+    Significance: Represents the cold, bureaucratic, and hypocritical heart of the
+    imperial machine.
+- The African wilderness and river
+    Type: natural and remote
+    Significance: Symbolizes the untamed subconscious and a space devoid of societal
+    restraints where true human nature is revealed.
+
+CENTRAL CONFLICT
+----------------
+Summary:
+  Marlow must navigate the physical dangers of the wilderness and the moral decay of the
+  imperial agents while struggling to maintain his own sanity and ethical boundaries.
+Structural type: person vs. self
+Thematic opposing force:
+  civilized illusion vs. primal savagery
+
+PRINCIPAL EVENTS
+----------------
+- Marlow arrives at the outer stations and witnesses the brutal exploitation and death of
+  the native workers.
+    Relationship to values/goals: Shatters his belief in the civilizing mission and
+    threatens his sense of justice and humanity.
+- Marlow spends months repairing a sunken steamboat while observing the scheming and
+  incompetence of the company agents.
+    Relationship to values/goals: Highlights his reliance on efficiency and hard work as a
+    means to maintain his sanity.
+- The steamboat is attacked by natives en route to the Inner Station, resulting in the
+  death of the helmsman.
+    Relationship to values/goals: Tests his survival skills and deepens his understanding
+    of the wilderness's overwhelming power.
+- Marlow finally meets Kurtz and discovers the agent has descended into madness and brutal
+  tyranny.
+    Relationship to values/goals: Confronts Marlow with the ultimate corruption of the
+    human soul when stripped of societal restraints.
+- Following Kurtz's death, Marlow returns to Europe and lies to Kurtz's Intended about his
+  final words.
+    Relationship to values/goals: Forces Marlow to sacrifice his deep value of honesty to
+    protect the fragile illusions of civilization.
+
+VALUES PURSUED
+--------------
+- truth: Marlow seeks the reality behind the Company's noble rhetoric and Kurtz's legendary status.
+- efficiency: Marlow uses practical work and competence as an anchor to maintain his sanity amidst chaos.
+
+VALUES THREATENED
+-----------------
+- sanity: The absurd and brutal environment of the colonial stations threatens Marlow's mental stability.
+- honesty: Marlow's commitment to the truth is ultimately sacrificed when he lies to Kurtz's Intended.
+
+CONSEQUENCE AND RESOLUTION
+--------------------------
+Ending summary:
+  Marlow returns to Europe profoundly alienated and lies to Kurtz's grieving fiancée,
+  telling her that Kurtz's last word was her name rather than a declaration of horror.
+Moral significance:
+  Demonstrates that the dark truths of human nature are too devastating for civilized
+  society, which relies on comforting illusions to survive.

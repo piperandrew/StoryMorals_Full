@@ -4,16 +4,17 @@ The goal is to identify both the story’s document-level moral meaning and the 
 
 Instructions:
 1. Identify the protagonist.
-2. Identify the major themes of the story.
-3. Identify the major locations or settings: focus on generic labels not particular places, ie. whether the world is urban, rural, wealthy, poor, domestic, public, institutional, natural, fantastical, etc.
-4. Identify the central conflict, dilemma, or opposing force.
+2. Write a very brief, high-level summary of the story in 3 sentences.
+3. Identify the major themes of the story.
+4. Identify the major locations or settings: focus on generic labels not particular places, ie. whether the world is urban, rural, wealthy, poor, domestic, public, institutional, natural, fantastical, etc.
+5. Identify the central conflict, dilemma, or opposing force.
     * Include the structural conflict type from this list:  person vs. person, person vs. self, person vs. society, person vs. nature, person vs. fate, person vs. technology, or person vs. supernatural.
     * Also include the thematic opposing force or dilemma, such as political oppression, environmental collapse, social exclusion, poverty, family obligation, serving family v. country, etc.
-5. List the main events of the story, up to 5. These should be general events rather than excessive plot details, and each should be connected to the story's overall moral trajectory.
-6. Identify the main values pursued by the protagonist.
-7. Identify the main values threatened, violated, sacrificed, or placed at risk from the protagonist’s perspective.
-8. Describe the consequence, ending, or resolution of the story.
-9. Generate exactly three plausible story morals. Each moral should be a concise, pithy, memorable statement. The morals should be distinct from one another but all plausibly grounded in the story. They should reflect the story’s larger message or values.
+6. List the main events of the story, up to 5. These should be general events rather than excessive plot details, and each should be connected to the story's overall moral trajectory.
+7. Identify the main values pursued by the protagonist.
+8. Identify the main values threatened, violated, sacrificed, or placed at risk from the protagonist’s perspective.
+9. Describe the consequence, ending, or resolution of the story.
+10. Generate exactly three plausible story morals. Each moral should be a concise, pithy, memorable statement. The morals should be distinct from one another but all plausibly grounded in the story. They should reflect the story’s larger message or values.
 Output requirements:
 * Return only valid JSON.
 * Do not include markdown, commentary, or explanation outside the JSON.
@@ -22,4 +23,6 @@ Output requirements:
 * Values should be expressed as short abstract nouns or noun phrases, such as “loyalty,” “freedom,” “justice,” “self-sacrifice,” “family duty,” “ambition,” “compassion,” “dignity,” or “survival.”
 * Story morals should be phrased as generalizable lessons, not plot summaries.
 Use the following JSON structure:
-{ "protagonist": { "name": "", "description": "", "primary_goal": "" }, "major_themes": [ "" ], "major_locations": [ { "location": "", "location_type": "", "social_or_symbolic_significance": "" } ], "central_conflict": { "summary": "", "structural_type": "", "thematic_opposing_force": "" }, "principal_events": [ { "event": "", "relationship_to_values_or_goals": "" } ], "values_pursued": [ { "value": "", "explanation": "" } ], "values_threatened": [ { "value": "", "explanation": "" } ], "consequence_resolution": { "ending_summary": "", "moral_significance": "" }, "story_morals": [ "", "", "" ] }  Story: [INSERT STORY HERE]
+{ "protagonist": { "name": "", "description": "", "primary_goal": "" },
+"summary": [ ""
+], "major_themes": [ "" ], "major_locations": [ { "location": "", "location_type": "", "social_or_symbolic_significance": "" } ], "central_conflict": { "summary": "", "structural_type": "", "thematic_opposing_force": "" }, "principal_events": [ { "event": "", "relationship_to_values_or_goals": "" } ], "values_pursued": [ { "value": "", "explanation": "" } ], "values_threatened": [ { "value": "", "explanation": "" } ], "consequence_resolution": { "ending_summary": "", "moral_significance": "" }, "story_morals": [ "", "", "" ] }  Story: [INSERT STORY HERE]
