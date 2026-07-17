@@ -1,6 +1,3 @@
-Heart of Darkness
-=================
-
 PROTAGONIST
 -----------
 Name: Charles Marlow
@@ -28,52 +25,23 @@ MAJOR THEMES
 - alienation
 - truth versus illusion
 
-MAJOR LOCATIONS
----------------
-- The Thames River estuary
-    Type: natural and public
-    Significance: Serves as the framing setting, symbolizing the threshold between the
-    civilized world and the dark unknown.
-- The Company Offices
-    Type: urban and institutional
-    Significance: Represents the cold, bureaucratic, and hypocritical heart of the
-    imperial machine.
-- The African wilderness and river
-    Type: natural and remote
-    Significance: Symbolizes the untamed subconscious and a space devoid of societal
-    restraints where true human nature is revealed.
-
-CENTRAL CONFLICT
-----------------
-Summary:
-  Marlow must navigate the physical dangers of the wilderness and the moral decay of the
-  imperial agents while struggling to maintain his own sanity and ethical boundaries.
-Structural type: person vs. self
-Thematic opposing force:
-  civilized illusion vs. primal savagery
-
 PRINCIPAL EVENTS
 ----------------
 - Marlow arrives at the outer stations and witnesses the brutal exploitation and death of
-  the native workers.
-    Relationship to values/goals: Shatters his belief in the civilizing mission and
-    threatens his sense of justice and humanity.
+  the native workers. Shatters his belief in the civilizing mission and threatens his
+  sense of justice and humanity.
 - Marlow spends months repairing a sunken steamboat while observing the scheming and
-  incompetence of the company agents.
-    Relationship to values/goals: Highlights his reliance on efficiency and hard work as a
-    means to maintain his sanity.
+  incompetence of the company agents. Highlights his reliance on efficiency and hard work
+  as a means to maintain his sanity.
 - The steamboat is attacked by natives en route to the Inner Station, resulting in the
-  death of the helmsman.
-    Relationship to values/goals: Tests his survival skills and deepens his understanding
-    of the wilderness's overwhelming power.
+  death of the helmsman. Tests his survival skills and deepens his understanding of the
+  wilderness's overwhelming power.
 - Marlow finally meets Kurtz and discovers the agent has descended into madness and brutal
-  tyranny.
-    Relationship to values/goals: Confronts Marlow with the ultimate corruption of the
-    human soul when stripped of societal restraints.
+  tyranny. Confronts Marlow with the ultimate corruption of the human soul when stripped
+  of societal restraints.
 - Following Kurtz's death, Marlow returns to Europe and lies to Kurtz's Intended about his
-  final words.
-    Relationship to values/goals: Forces Marlow to sacrifice his deep value of honesty to
-    protect the fragile illusions of civilization.
+  final words. Forces Marlow to sacrifice his deep value of honesty to protect the fragile
+  illusions of civilization.
 
 VALUES PURSUED
 --------------
@@ -90,6 +58,11 @@ CONSEQUENCE AND RESOLUTION
 Ending summary:
   Marlow returns to Europe profoundly alienated and lies to Kurtz's grieving fiancée,
   telling her that Kurtz's last word was her name rather than a declaration of horror.
-Moral significance:
-  Demonstrates that the dark truths of human nature are too devastating for civilized
-  society, which relies on comforting illusions to survive.
+
+STORY MORALS
+------------
+- Without the external restraints of society, the human soul is highly susceptible to
+  corruption and savagery.
+- The veneer of civilization often masks profound hypocrisy and brutal exploitation.
+- Sometimes, preserving the fragile innocence of others requires the sacrifice of absolute
+  truth.

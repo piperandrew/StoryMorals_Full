@@ -38,16 +38,6 @@ def wrap_indented(text, indent=2):
     return textwrap.fill(text, width=WIDTH, initial_indent=pad, subsequent_indent=pad)
 
 
-def wrap_labeled(label, text, indent=4):
-    """Wrap "<indent>Label: text", continuation lines indented by `indent`."""
-    pad = " " * indent
-    text = (text or "").strip()
-    return textwrap.fill(
-        f"{label}: {text}", width=WIDTH,
-        initial_indent=pad, subsequent_indent=pad,
-    )
-
-
 def header(title, char):
     return f"{title}\n{char * len(title)}"
 
@@ -56,11 +46,9 @@ def header(title, char):
 # Report body
 # ---------------------------------------------------------------------------
 
-def build_report(book, res, include_morals=False):
+def build_report(res, include_morals=False):
     """Return the full report text for one book given its result dict."""
     out = []
-    out.append(header(book, "="))
-    out.append("")
 
     # PROTAGONIST
     prot = res.get("protagonist") or {}
@@ -88,37 +76,16 @@ def build_report(book, res, include_morals=False):
         out.append(f"- {theme}")
     out.append("")
 
-    # MAJOR LOCATIONS
-    out.append(header("MAJOR LOCATIONS", "-"))
-    for loc in res.get("major_locations") or []:
-        out.append(f"- {loc.get('location', '') or ''}")
-        if loc.get("location_type"):
-            out.append(f"    Type: {loc['location_type']}")
-        if loc.get("social_or_symbolic_significance"):
-            out.append(wrap_labeled("Significance", loc["social_or_symbolic_significance"]))
-    out.append("")
-
-    # CENTRAL CONFLICT
-    conf = res.get("central_conflict") or {}
-    out.append(header("CENTRAL CONFLICT", "-"))
-    out.append("Summary:")
-    out.append(wrap_indented(conf.get("summary")))
-    out.append(f"Structural type: {conf.get('structural_type', '') or ''}")
-    out.append("Thematic opposing force:")
-    out.append(wrap_indented(conf.get("thematic_opposing_force")))
-    out.append("")
-
     # PRINCIPAL EVENTS
     out.append(header("PRINCIPAL EVENTS", "-"))
     for ev in res.get("principal_events") or []:
-        event_text = (ev.get("event", "") or "").strip()
+        parts = [(ev.get("event") or "").strip(),
+                 (ev.get("relationship_to_values_or_goals") or "").strip()]
+        event_text = " ".join(p for p in parts if p)
         out.append(textwrap.fill(
             f"- {event_text}", width=WIDTH,
             initial_indent="", subsequent_indent="  ",
         ))
-        if ev.get("relationship_to_values_or_goals"):
-            out.append(wrap_labeled("Relationship to values/goals",
-                                    ev["relationship_to_values_or_goals"]))
     out.append("")
 
     # VALUES PURSUED
@@ -138,8 +105,6 @@ def build_report(book, res, include_morals=False):
     out.append(header("CONSEQUENCE AND RESOLUTION", "-"))
     out.append("Ending summary:")
     out.append(wrap_indented(cons.get("ending_summary")))
-    out.append("Moral significance:")
-    out.append(wrap_indented(cons.get("moral_significance")))
     out.append("")
 
     # STORY MORALS (optional)
@@ -220,7 +185,7 @@ def main():
     os.makedirs(args.outdir, exist_ok=True)
     print(f"\nGenerating reports for model='{model}', condition='{condition}':")
     for book in sorted(selected):
-        report = build_report(book, selected[book]["result"], include_morals)
+        report = build_report(selected[book]["result"], include_morals)
         out_path = os.path.join(args.outdir, f"{sanitize(book)}_report.txt")
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(report)

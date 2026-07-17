@@ -1,0 +1,66 @@
+IN_E_LifeClock
+==============
+
+PROTAGONIST
+-----------
+Name: Samar
+Description:
+  A young, anxious university student in Srinagar who is deeply infatuated with his
+  classmate Rabiya.
+Primary goal:
+  To win Rabiya's love and build a relationship with her despite the surrounding social
+  and political turmoil.
+
+SUMMARY
+-------
+  In the politically volatile and militarized city of Srinagar, young student Samar falls
+  in love with Rabiya, while a local metalworker named Mubarak struggles to keep his
+  family afloat amidst curfews and personal temptations. As political unrest, violence,
+  and communication blackouts paralyze the region, the characters' personal lives,
+  livelihoods, and relationships are severely tested. Ultimately, the oppressive
+  environment and societal pressures force Samar and Rabiya apart, leaving the characters
+  to navigate a fractured, war-torn reality.
+
+MAJOR THEMES
+------------
+- Political conflict and militarization
+- The fragility of love
+- Environmental and urban decay
+- Social conservatism
+- Survival amidst chaos
+
+PRINCIPAL EVENTS
+----------------
+- Samar and Rabiya meet and slowly fall in love on a local matador, navigating the tense
+  urban landscape of Srinagar. Establishes Samar's pursuit of love and connection amidst a
+  chaotic environment.
+- Mubarak's cow dies because strict curfews prevent him from obtaining necessary medicine.
+  Demonstrates how political oppression directly threatens the survival and economic
+  stability of ordinary families.
+- Samar and Rabiya are publicly attacked and insulted for their romance. Highlights the
+  threat of social conservatism and lack of personal freedom in their community.
+- Sana discovers the militarized reality of Pari Mahal and uncovers Samar and Rabiya's
+  secret romance. Marks the intersection of lost childhood innocence with the fragile,
+  hidden nature of love in a conflict zone.
+- Samar and Rabiya's relationship collapses due to family opposition and communication
+  blackouts, forcing Samar to leave for Delhi. Culminates the destruction of personal
+  dreams and autonomy by systemic conflict and societal pressure.
+
+VALUES PURSUED
+--------------
+- Love: Samar relentlessly pursues a romantic connection with Rabiya as a source of hope and meaning.
+- Normalcy: The characters strive to maintain everyday routines, businesses, and relationships despite the surrounding violence.
+- Freedom: Characters seek the autonomy to choose their partners, move freely, and live without constant surveillance or restriction.
+
+VALUES THREATENED
+-----------------
+- Safety: The constant presence of security bunkers, protests, curfews, and gunfire puts the characters' physical well-being at risk.
+- Autonomy: Communication blackouts, curfews, and forced marriages strip the characters of their ability to make personal choices.
+- Innocence: Children like Sana are forced to grow up in militarized zones, realizing early on that their world is dangerous and restricted.
+
+CONSEQUENCE AND RESOLUTION
+--------------------------
+Ending summary:
+  Samar flees to Delhi after his relationship with Rabiya is destroyed by family
+  opposition and communication blackouts, while Rabiya is forced into an arranged marriage
+  and violence continues to erupt in Srinagar.
